@@ -1,0 +1,909 @@
+[debug] [2020-11-13T14:04:08.582Z] ----------------------------------------------------------------------
+[debug] [2020-11-13T14:04:08.585Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\MC\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js functions:shell
+[debug] [2020-11-13T14:04:08.585Z] CLI Version:   8.16.1
+[debug] [2020-11-13T14:04:08.585Z] Platform:      win32
+[debug] [2020-11-13T14:04:08.585Z] Node Version:  v14.5.0
+[debug] [2020-11-13T14:04:08.586Z] Time:          Fri Nov 13 2020 17:04:08 GMT+0300 (التوقيت العربي الرسمي)
+[debug] [2020-11-13T14:04:08.587Z] ----------------------------------------------------------------------
+[debug] [2020-11-13T14:04:08.587Z] 
+[debug] [2020-11-13T14:04:08.594Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-11-13T14:04:08.594Z] > authorizing via signed-in user
+[debug] [2020-11-13T14:04:08.595Z] [iam] checking project exhale-project-ff168 for permissions ["firebase.projects.get"]
+[debug] [2020-11-13T14:04:08.598Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/exhale-project-ff168:testIamPermissions  
+ {"permissions":["firebase.projects.get"]}
+[debug] [2020-11-13T14:04:09.703Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Fri, 13 Nov 2020 14:04:10 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=571","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[warn] !  Your requested "node" version "8" doesn't match your global version "14" {"metadata":{"emulator":{"name":"functions"},"message":"Your requested \"node\" version \"8\" doesn't match your global version \"14\""}}
+[debug] [2020-11-13T14:04:11.747Z] defaultcredentials: writing to file C:\Users\MC\AppData\Roaming\firebase\somia_abdullah3_gmail.com_application_default_credentials.json
+[debug] [2020-11-13T14:04:11.749Z] DEBUG: Setting GAC to C:\Users\MC\AppData\Roaming\firebase\somia_abdullah3_gmail.com_application_default_credentials.json
+[debug] [2020-11-13T14:04:11.762Z] [functions] Watching "C:\Users\MC\Downloads\newReCoded\Capstone project\send-form-email\functions" for Cloud Functions...
+[debug] [2020-11-13T14:04:11.780Z] DEBUG: [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-11-13T14:04:11.780Z] DEBUG: [worker-pool] Adding worker with key ~diagnostic~, total=1
+[debug] [2020-11-13T14:04:11.780Z] DEBUG: [worker-pool] submitWork(triggerId=)
+[debug] [2020-11-13T14:04:11.780Z] DEBUG: [worker-~diagnostic~-73009bf3-a269-40b3-a098-f177245c690a]: Assigning socketPath: \\?\pipe\C:\Users\MC\Downloads\newReCoded\Capstone project\send-form-email\functions\8872
+[debug] [2020-11-13T14:04:11.781Z] DEBUG: [worker-~diagnostic~-73009bf3-a269-40b3-a098-f177245c690a]: BUSY
+[debug] [2020-11-13T14:04:12.187Z] DEBUG: [runtime-status] [8872] Functions runtime initialized. {"cwd":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions","node_version":"14.5.0"}
+[debug] [2020-11-13T14:04:12.189Z] DEBUG: [runtime-status] [8872] Disabled runtime features: undefined
+[debug] [2020-11-13T14:04:12.193Z] DEBUG: [runtime-status] [8872] Resolved module firebase-admin {"declared":true,"installed":true,"version":"9.4.0","resolution":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2020-11-13T14:04:12.197Z] DEBUG: [runtime-status] [8872] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.11.0","resolution":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-11-13T14:04:12.199Z] DEBUG: [runtime-status] [8872] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.11.0","resolution":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-11-13T14:04:12.201Z] DEBUG: [runtime-status] [8872] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}]
+[debug] [2020-11-13T14:04:12.202Z] DEBUG: [runtime-status] [8872] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.11.0","resolution":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-11-13T14:04:12.246Z] DEBUG: [runtime-status] [8872] Checked functions.config() {"config":{}}
+[debug] [2020-11-13T14:04:12.246Z] DEBUG: [runtime-status] [8872] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"3.11.0","resolution":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\node_modules\\firebase-functions\\lib\\index.js"}}
+[debug] [2020-11-13T14:04:12.246Z] DEBUG: [runtime-status] [8872] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.11.0","resolution":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-11-13T14:04:12.248Z] DEBUG: [runtime-status] [8872] Resolved module firebase-admin {"declared":true,"installed":true,"version":"9.4.0","resolution":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2020-11-13T14:04:12.248Z] DEBUG: [runtime-status] [8872] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.11.0","resolution":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-11-13T14:04:12.248Z] DEBUG: [runtime-status] [8872] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"9.4.0","resolution":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\node_modules\\firebase-admin\\lib\\index.js"}}
+[warn] !  It looks like you're trying to access functions.config().gmail but there is no value there. You can learn more about setting up config here: https://firebase.google.com/docs/functions/local-emulator {"metadata":{"emulator":{"name":"functions"},"message":"It looks like you're trying to access functions.config().gmail but there is no value there. You can learn more about setting up config here: https://firebase.google.com/docs/functions/local-emulator"}}
+[warn] !  TypeError: Cannot read property 'email' of undefined
+    at Object.<anonymous> (C:\Users\MC\Downloads\newReCoded\Capstone project\send-form-email\functions\index.js:7:44)
+    at Module._compile (internal/modules/cjs/loader.js:1201:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1221:10)
+    at Module.load (internal/modules/cjs/loader.js:1050:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:938:14)
+    at Module.require (internal/modules/cjs/loader.js:1090:19)
+    at require (internal/modules/cjs/helpers.js:75:18)
+    at C:\Users\MC\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulatorRuntime.js:698:33
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\MC\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulatorRuntime.js:5:58) {"metadata":{"emulator":{"name":"functions"},"message":"TypeError: Cannot read property 'email' of undefined\n    at Object.<anonymous> (C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\index.js:7:44)\n    at Module._compile (internal/modules/cjs/loader.js:1201:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1221:10)\n    at Module.load (internal/modules/cjs/loader.js:1050:32)\n    at Function.Module._load (internal/modules/cjs/loader.js:938:14)\n    at Module.require (internal/modules/cjs/loader.js:1090:19)\n    at require (internal/modules/cjs/helpers.js:75:18)\n    at C:\\Users\\MC\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\functionsEmulatorRuntime.js:698:33\n    at Generator.next (<anonymous>)\n    at fulfilled (C:\\Users\\MC\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\functionsEmulatorRuntime.js:5:58)"}}
+[warn] !  We were unable to load your functions code. (see above) {"metadata":{"emulator":{"name":"functions"}}}
+[debug] [2020-11-13T14:04:12.328Z] DEBUG: [worker-~diagnostic~-73009bf3-a269-40b3-a098-f177245c690a]: exited
+[debug] [2020-11-13T14:04:12.328Z] DEBUG: [worker-~diagnostic~-73009bf3-a269-40b3-a098-f177245c690a]: FINISHED
+[debug] [2020-11-13T15:56:32.829Z] DEBUG: File C:\Users\MC\Downloads\newReCoded\Capstone project\send-form-email\functions\index.js changed, reloading triggers
+[debug] [2020-11-13T15:56:33.832Z] DEBUG: [worker-pool] Cleaned up workers for ~diagnostic~: 1 --> 0
+[debug] [2020-11-13T15:56:33.851Z] DEBUG: [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-11-13T15:56:33.851Z] DEBUG: [worker-pool] Adding worker with key ~diagnostic~, total=1
+[debug] [2020-11-13T15:56:33.851Z] DEBUG: [worker-pool] submitWork(triggerId=)
+[debug] [2020-11-13T15:56:33.852Z] DEBUG: [worker-~diagnostic~-4d7f2369-bf73-4106-95f3-e5b631ccd29c]: Assigning socketPath: \\?\pipe\C:\Users\MC\Downloads\newReCoded\Capstone project\send-form-email\functions\4116
+[debug] [2020-11-13T15:56:33.852Z] DEBUG: [worker-~diagnostic~-4d7f2369-bf73-4106-95f3-e5b631ccd29c]: BUSY
+[debug] [2020-11-13T15:56:34.351Z] DEBUG: [runtime-status] [4116] Functions runtime initialized. {"cwd":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions","node_version":"14.5.0"}
+[debug] [2020-11-13T15:56:34.354Z] DEBUG: [runtime-status] [4116] Disabled runtime features: undefined
+[debug] [2020-11-13T15:56:34.359Z] DEBUG: [runtime-status] [4116] Resolved module firebase-admin {"declared":true,"installed":true,"version":"9.4.0","resolution":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2020-11-13T15:56:34.363Z] DEBUG: [runtime-status] [4116] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.11.0","resolution":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-11-13T15:56:34.365Z] DEBUG: [runtime-status] [4116] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.11.0","resolution":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-11-13T15:56:34.366Z] DEBUG: [runtime-status] [4116] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}]
+[debug] [2020-11-13T15:56:34.367Z] DEBUG: [runtime-status] [4116] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.11.0","resolution":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-11-13T15:56:34.416Z] DEBUG: [runtime-status] [4116] Checked functions.config() {"config":{}}
+[debug] [2020-11-13T15:56:34.416Z] DEBUG: [runtime-status] [4116] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"3.11.0","resolution":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\node_modules\\firebase-functions\\lib\\index.js"}}
+[debug] [2020-11-13T15:56:34.417Z] DEBUG: [runtime-status] [4116] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.11.0","resolution":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-11-13T15:56:34.418Z] DEBUG: [runtime-status] [4116] Resolved module firebase-admin {"declared":true,"installed":true,"version":"9.4.0","resolution":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2020-11-13T15:56:34.418Z] DEBUG: [runtime-status] [4116] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.11.0","resolution":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-11-13T15:56:34.419Z] DEBUG: [runtime-status] [4116] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"9.4.0","resolution":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\node_modules\\firebase-admin\\lib\\index.js"}}
+[warn] !  TypeError: Cannot read property 'email' of undefined
+    at Object.<anonymous> (C:\Users\MC\Downloads\newReCoded\Capstone project\send-form-email\functions\index.js:7:44)
+    at Module._compile (internal/modules/cjs/loader.js:1201:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1221:10)
+    at Module.load (internal/modules/cjs/loader.js:1050:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:938:14)
+    at Module.require (internal/modules/cjs/loader.js:1090:19)
+    at require (internal/modules/cjs/helpers.js:75:18)
+    at C:\Users\MC\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulatorRuntime.js:698:33
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\MC\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulatorRuntime.js:5:58) {"metadata":{"emulator":{"name":"functions"},"message":"TypeError: Cannot read property 'email' of undefined\n    at Object.<anonymous> (C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\index.js:7:44)\n    at Module._compile (internal/modules/cjs/loader.js:1201:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1221:10)\n    at Module.load (internal/modules/cjs/loader.js:1050:32)\n    at Function.Module._load (internal/modules/cjs/loader.js:938:14)\n    at Module.require (internal/modules/cjs/loader.js:1090:19)\n    at require (internal/modules/cjs/helpers.js:75:18)\n    at C:\\Users\\MC\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\functionsEmulatorRuntime.js:698:33\n    at Generator.next (<anonymous>)\n    at fulfilled (C:\\Users\\MC\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\functionsEmulatorRuntime.js:5:58)"}}
+[warn] !  We were unable to load your functions code. (see above) {"metadata":{"emulator":{"name":"functions"}}}
+[debug] [2020-11-13T15:56:34.503Z] DEBUG: [worker-~diagnostic~-4d7f2369-bf73-4106-95f3-e5b631ccd29c]: exited
+[debug] [2020-11-13T15:56:34.503Z] DEBUG: [worker-~diagnostic~-4d7f2369-bf73-4106-95f3-e5b631ccd29c]: FINISHED
+[debug] [2020-11-13T15:57:31.170Z] DEBUG: File C:\Users\MC\Downloads\newReCoded\Capstone project\send-form-email\functions\index.js changed, reloading triggers
+[debug] [2020-11-13T15:57:32.172Z] DEBUG: [worker-pool] Cleaned up workers for ~diagnostic~: 1 --> 0
+[debug] [2020-11-13T15:57:32.195Z] DEBUG: [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-11-13T15:57:32.196Z] DEBUG: [worker-pool] Adding worker with key ~diagnostic~, total=1
+[debug] [2020-11-13T15:57:32.196Z] DEBUG: [worker-pool] submitWork(triggerId=)
+[debug] [2020-11-13T15:57:32.197Z] DEBUG: [worker-~diagnostic~-a88150b8-48d7-4a4c-a074-6a16f4d33c7a]: Assigning socketPath: \\?\pipe\C:\Users\MC\Downloads\newReCoded\Capstone project\send-form-email\functions\14908
+[debug] [2020-11-13T15:57:32.197Z] DEBUG: [worker-~diagnostic~-a88150b8-48d7-4a4c-a074-6a16f4d33c7a]: BUSY
+[debug] [2020-11-13T15:57:32.632Z] DEBUG: [runtime-status] [14908] Functions runtime initialized. {"cwd":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions","node_version":"14.5.0"}
+[debug] [2020-11-13T15:57:32.635Z] DEBUG: [runtime-status] [14908] Disabled runtime features: undefined
+[debug] [2020-11-13T15:57:32.639Z] DEBUG: [runtime-status] [14908] Resolved module firebase-admin {"declared":true,"installed":true,"version":"9.4.0","resolution":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2020-11-13T15:57:32.642Z] DEBUG: [runtime-status] [14908] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.11.0","resolution":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-11-13T15:57:32.644Z] DEBUG: [runtime-status] [14908] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.11.0","resolution":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-11-13T15:57:32.645Z] DEBUG: [runtime-status] [14908] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}]
+[debug] [2020-11-13T15:57:32.646Z] DEBUG: [runtime-status] [14908] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.11.0","resolution":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-11-13T15:57:32.688Z] DEBUG: [runtime-status] [14908] Checked functions.config() {"config":{}}
+[debug] [2020-11-13T15:57:32.688Z] DEBUG: [runtime-status] [14908] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"3.11.0","resolution":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\node_modules\\firebase-functions\\lib\\index.js"}}
+[debug] [2020-11-13T15:57:32.689Z] DEBUG: [runtime-status] [14908] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.11.0","resolution":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-11-13T15:57:32.690Z] DEBUG: [runtime-status] [14908] Resolved module firebase-admin {"declared":true,"installed":true,"version":"9.4.0","resolution":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2020-11-13T15:57:32.691Z] DEBUG: [runtime-status] [14908] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.11.0","resolution":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-11-13T15:57:32.691Z] DEBUG: [runtime-status] [14908] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"9.4.0","resolution":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\node_modules\\firebase-admin\\lib\\index.js"}}
+[warn] !  TypeError: Cannot read property 'email' of undefined
+    at Object.<anonymous> (C:\Users\MC\Downloads\newReCoded\Capstone project\send-form-email\functions\index.js:7:44)
+    at Module._compile (internal/modules/cjs/loader.js:1201:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1221:10)
+    at Module.load (internal/modules/cjs/loader.js:1050:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:938:14)
+    at Module.require (internal/modules/cjs/loader.js:1090:19)
+    at require (internal/modules/cjs/helpers.js:75:18)
+    at C:\Users\MC\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulatorRuntime.js:698:33
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\MC\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulatorRuntime.js:5:58) {"metadata":{"emulator":{"name":"functions"},"message":"TypeError: Cannot read property 'email' of undefined\n    at Object.<anonymous> (C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\index.js:7:44)\n    at Module._compile (internal/modules/cjs/loader.js:1201:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1221:10)\n    at Module.load (internal/modules/cjs/loader.js:1050:32)\n    at Function.Module._load (internal/modules/cjs/loader.js:938:14)\n    at Module.require (internal/modules/cjs/loader.js:1090:19)\n    at require (internal/modules/cjs/helpers.js:75:18)\n    at C:\\Users\\MC\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\functionsEmulatorRuntime.js:698:33\n    at Generator.next (<anonymous>)\n    at fulfilled (C:\\Users\\MC\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\functionsEmulatorRuntime.js:5:58)"}}
+[warn] !  We were unable to load your functions code. (see above) {"metadata":{"emulator":{"name":"functions"}}}
+[debug] [2020-11-13T15:57:32.765Z] DEBUG: [worker-~diagnostic~-a88150b8-48d7-4a4c-a074-6a16f4d33c7a]: exited
+[debug] [2020-11-13T15:57:32.766Z] DEBUG: [worker-~diagnostic~-a88150b8-48d7-4a4c-a074-6a16f4d33c7a]: FINISHED
+[debug] [2020-11-13T15:57:34.572Z] DEBUG: File C:\Users\MC\Downloads\newReCoded\Capstone project\send-form-email\functions\index.js changed, reloading triggers
+[debug] [2020-11-13T15:57:35.574Z] DEBUG: [worker-pool] Cleaned up workers for ~diagnostic~: 1 --> 0
+[debug] [2020-11-13T15:57:35.596Z] DEBUG: [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-11-13T15:57:35.596Z] DEBUG: [worker-pool] Adding worker with key ~diagnostic~, total=1
+[debug] [2020-11-13T15:57:35.597Z] DEBUG: [worker-pool] submitWork(triggerId=)
+[debug] [2020-11-13T15:57:35.597Z] DEBUG: [worker-~diagnostic~-3f944ad3-48d5-48de-879c-15d577f4c4eb]: Assigning socketPath: \\?\pipe\C:\Users\MC\Downloads\newReCoded\Capstone project\send-form-email\functions\8564
+[debug] [2020-11-13T15:57:35.597Z] DEBUG: [worker-~diagnostic~-3f944ad3-48d5-48de-879c-15d577f4c4eb]: BUSY
+[debug] [2020-11-13T15:57:36.024Z] DEBUG: [runtime-status] [8564] Functions runtime initialized. {"cwd":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions","node_version":"14.5.0"}
+[debug] [2020-11-13T15:57:36.026Z] DEBUG: [runtime-status] [8564] Disabled runtime features: undefined
+[debug] [2020-11-13T15:57:36.030Z] DEBUG: [runtime-status] [8564] Resolved module firebase-admin {"declared":true,"installed":true,"version":"9.4.0","resolution":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2020-11-13T15:57:36.031Z] DEBUG: [runtime-status] [8564] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.11.0","resolution":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-11-13T15:57:36.033Z] DEBUG: [runtime-status] [8564] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.11.0","resolution":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-11-13T15:57:36.035Z] DEBUG: [runtime-status] [8564] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}]
+[debug] [2020-11-13T15:57:36.035Z] DEBUG: [runtime-status] [8564] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.11.0","resolution":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-11-13T15:57:36.086Z] DEBUG: [runtime-status] [8564] Checked functions.config() {"config":{}}
+[debug] [2020-11-13T15:57:36.086Z] DEBUG: [runtime-status] [8564] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"3.11.0","resolution":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\node_modules\\firebase-functions\\lib\\index.js"}}
+[debug] [2020-11-13T15:57:36.087Z] DEBUG: [runtime-status] [8564] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.11.0","resolution":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-11-13T15:57:36.088Z] DEBUG: [runtime-status] [8564] Resolved module firebase-admin {"declared":true,"installed":true,"version":"9.4.0","resolution":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2020-11-13T15:57:36.088Z] DEBUG: [runtime-status] [8564] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.11.0","resolution":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-11-13T15:57:36.089Z] DEBUG: [runtime-status] [8564] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"9.4.0","resolution":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\node_modules\\firebase-admin\\lib\\index.js"}}
+[warn] !  TypeError: Cannot read property 'email' of undefined
+    at Object.<anonymous> (C:\Users\MC\Downloads\newReCoded\Capstone project\send-form-email\functions\index.js:7:44)
+    at Module._compile (internal/modules/cjs/loader.js:1201:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1221:10)
+    at Module.load (internal/modules/cjs/loader.js:1050:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:938:14)
+    at Module.require (internal/modules/cjs/loader.js:1090:19)
+    at require (internal/modules/cjs/helpers.js:75:18)
+    at C:\Users\MC\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulatorRuntime.js:698:33
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\MC\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulatorRuntime.js:5:58) {"metadata":{"emulator":{"name":"functions"},"message":"TypeError: Cannot read property 'email' of undefined\n    at Object.<anonymous> (C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\index.js:7:44)\n    at Module._compile (internal/modules/cjs/loader.js:1201:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1221:10)\n    at Module.load (internal/modules/cjs/loader.js:1050:32)\n    at Function.Module._load (internal/modules/cjs/loader.js:938:14)\n    at Module.require (internal/modules/cjs/loader.js:1090:19)\n    at require (internal/modules/cjs/helpers.js:75:18)\n    at C:\\Users\\MC\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\functionsEmulatorRuntime.js:698:33\n    at Generator.next (<anonymous>)\n    at fulfilled (C:\\Users\\MC\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\functionsEmulatorRuntime.js:5:58)"}}
+[warn] !  We were unable to load your functions code. (see above) {"metadata":{"emulator":{"name":"functions"}}}
+[debug] [2020-11-13T15:57:36.162Z] DEBUG: [worker-~diagnostic~-3f944ad3-48d5-48de-879c-15d577f4c4eb]: exited
+[debug] [2020-11-13T15:57:36.163Z] DEBUG: [worker-~diagnostic~-3f944ad3-48d5-48de-879c-15d577f4c4eb]: FINISHED
+[debug] [2020-11-13T15:57:36.259Z] DEBUG: File C:\Users\MC\Downloads\newReCoded\Capstone project\send-form-email\functions\index.js changed, reloading triggers
+[debug] [2020-11-13T15:57:37.261Z] DEBUG: [worker-pool] Cleaned up workers for ~diagnostic~: 1 --> 0
+[debug] [2020-11-13T15:57:37.285Z] DEBUG: [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-11-13T15:57:37.286Z] DEBUG: [worker-pool] Adding worker with key ~diagnostic~, total=1
+[debug] [2020-11-13T15:57:37.286Z] DEBUG: [worker-pool] submitWork(triggerId=)
+[debug] [2020-11-13T15:57:37.286Z] DEBUG: [worker-~diagnostic~-48252880-ae33-4cea-822f-0f636c0e9bae]: Assigning socketPath: \\?\pipe\C:\Users\MC\Downloads\newReCoded\Capstone project\send-form-email\functions\12852
+[debug] [2020-11-13T15:57:37.287Z] DEBUG: [worker-~diagnostic~-48252880-ae33-4cea-822f-0f636c0e9bae]: BUSY
+[debug] [2020-11-13T15:57:37.734Z] DEBUG: [runtime-status] [12852] Functions runtime initialized. {"cwd":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions","node_version":"14.5.0"}
+[debug] [2020-11-13T15:57:37.737Z] DEBUG: [runtime-status] [12852] Disabled runtime features: undefined
+[debug] [2020-11-13T15:57:37.741Z] DEBUG: [runtime-status] [12852] Resolved module firebase-admin {"declared":true,"installed":true,"version":"9.4.0","resolution":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2020-11-13T15:57:37.745Z] DEBUG: [runtime-status] [12852] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.11.0","resolution":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-11-13T15:57:37.747Z] DEBUG: [runtime-status] [12852] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.11.0","resolution":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-11-13T15:57:37.749Z] DEBUG: [runtime-status] [12852] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}]
+[debug] [2020-11-13T15:57:37.749Z] DEBUG: [runtime-status] [12852] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.11.0","resolution":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-11-13T15:57:37.792Z] DEBUG: [runtime-status] [12852] Checked functions.config() {"config":{}}
+[debug] [2020-11-13T15:57:37.792Z] DEBUG: [runtime-status] [12852] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"3.11.0","resolution":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\node_modules\\firebase-functions\\lib\\index.js"}}
+[debug] [2020-11-13T15:57:37.793Z] DEBUG: [runtime-status] [12852] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.11.0","resolution":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-11-13T15:57:37.794Z] DEBUG: [runtime-status] [12852] Resolved module firebase-admin {"declared":true,"installed":true,"version":"9.4.0","resolution":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2020-11-13T15:57:37.794Z] DEBUG: [runtime-status] [12852] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.11.0","resolution":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-11-13T15:57:37.795Z] DEBUG: [runtime-status] [12852] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"9.4.0","resolution":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\node_modules\\firebase-admin\\lib\\index.js"}}
+[warn] !  TypeError: Cannot read property 'email' of undefined
+    at Object.<anonymous> (C:\Users\MC\Downloads\newReCoded\Capstone project\send-form-email\functions\index.js:7:44)
+    at Module._compile (internal/modules/cjs/loader.js:1201:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1221:10)
+    at Module.load (internal/modules/cjs/loader.js:1050:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:938:14)
+    at Module.require (internal/modules/cjs/loader.js:1090:19)
+    at require (internal/modules/cjs/helpers.js:75:18)
+    at C:\Users\MC\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulatorRuntime.js:698:33
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\MC\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulatorRuntime.js:5:58) {"metadata":{"emulator":{"name":"functions"},"message":"TypeError: Cannot read property 'email' of undefined\n    at Object.<anonymous> (C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\index.js:7:44)\n    at Module._compile (internal/modules/cjs/loader.js:1201:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1221:10)\n    at Module.load (internal/modules/cjs/loader.js:1050:32)\n    at Function.Module._load (internal/modules/cjs/loader.js:938:14)\n    at Module.require (internal/modules/cjs/loader.js:1090:19)\n    at require (internal/modules/cjs/helpers.js:75:18)\n    at C:\\Users\\MC\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\functionsEmulatorRuntime.js:698:33\n    at Generator.next (<anonymous>)\n    at fulfilled (C:\\Users\\MC\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\functionsEmulatorRuntime.js:5:58)"}}
+[warn] !  We were unable to load your functions code. (see above) {"metadata":{"emulator":{"name":"functions"}}}
+[debug] [2020-11-13T15:57:37.869Z] DEBUG: [worker-~diagnostic~-48252880-ae33-4cea-822f-0f636c0e9bae]: exited
+[debug] [2020-11-13T15:57:37.869Z] DEBUG: [worker-~diagnostic~-48252880-ae33-4cea-822f-0f636c0e9bae]: FINISHED
+[debug] [2020-11-13T15:58:13.691Z] DEBUG: File C:\Users\MC\Downloads\newReCoded\Capstone project\send-form-email\functions\index.js changed, reloading triggers
+[debug] [2020-11-13T15:58:14.692Z] DEBUG: [worker-pool] Cleaned up workers for ~diagnostic~: 1 --> 0
+[debug] [2020-11-13T15:58:14.707Z] DEBUG: [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-11-13T15:58:14.707Z] DEBUG: [worker-pool] Adding worker with key ~diagnostic~, total=1
+[debug] [2020-11-13T15:58:14.707Z] DEBUG: [worker-pool] submitWork(triggerId=)
+[debug] [2020-11-13T15:58:14.707Z] DEBUG: [worker-~diagnostic~-d8b6e8a1-a895-4d0e-b90b-2cce3ca01e21]: Assigning socketPath: \\?\pipe\C:\Users\MC\Downloads\newReCoded\Capstone project\send-form-email\functions\11324
+[debug] [2020-11-13T15:58:14.708Z] DEBUG: [worker-~diagnostic~-d8b6e8a1-a895-4d0e-b90b-2cce3ca01e21]: BUSY
+[debug] [2020-11-13T15:58:15.167Z] DEBUG: [runtime-status] [11324] Functions runtime initialized. {"cwd":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions","node_version":"14.5.0"}
+[debug] [2020-11-13T15:58:15.171Z] DEBUG: [runtime-status] [11324] Disabled runtime features: undefined
+[debug] [2020-11-13T15:58:15.175Z] DEBUG: [runtime-status] [11324] Resolved module firebase-admin {"declared":true,"installed":true,"version":"9.4.0","resolution":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2020-11-13T15:58:15.179Z] DEBUG: [runtime-status] [11324] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.11.0","resolution":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-11-13T15:58:15.181Z] DEBUG: [runtime-status] [11324] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.11.0","resolution":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-11-13T15:58:15.182Z] DEBUG: [runtime-status] [11324] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}]
+[debug] [2020-11-13T15:58:15.183Z] DEBUG: [runtime-status] [11324] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.11.0","resolution":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-11-13T15:58:15.227Z] DEBUG: [runtime-status] [11324] Checked functions.config() {"config":{}}
+[debug] [2020-11-13T15:58:15.228Z] DEBUG: [runtime-status] [11324] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"3.11.0","resolution":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\node_modules\\firebase-functions\\lib\\index.js"}}
+[debug] [2020-11-13T15:58:15.228Z] DEBUG: [runtime-status] [11324] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.11.0","resolution":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-11-13T15:58:15.229Z] DEBUG: [runtime-status] [11324] Resolved module firebase-admin {"declared":true,"installed":true,"version":"9.4.0","resolution":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2020-11-13T15:58:15.230Z] DEBUG: [runtime-status] [11324] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.11.0","resolution":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-11-13T15:58:15.230Z] DEBUG: [runtime-status] [11324] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"9.4.0","resolution":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\node_modules\\firebase-admin\\lib\\index.js"}}
+[warn] !  TypeError: Cannot read property 'email' of undefined
+    at Object.<anonymous> (C:\Users\MC\Downloads\newReCoded\Capstone project\send-form-email\functions\index.js:7:44)
+    at Module._compile (internal/modules/cjs/loader.js:1201:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1221:10)
+    at Module.load (internal/modules/cjs/loader.js:1050:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:938:14)
+    at Module.require (internal/modules/cjs/loader.js:1090:19)
+    at require (internal/modules/cjs/helpers.js:75:18)
+    at C:\Users\MC\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulatorRuntime.js:698:33
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\MC\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulatorRuntime.js:5:58) {"metadata":{"emulator":{"name":"functions"},"message":"TypeError: Cannot read property 'email' of undefined\n    at Object.<anonymous> (C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\index.js:7:44)\n    at Module._compile (internal/modules/cjs/loader.js:1201:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1221:10)\n    at Module.load (internal/modules/cjs/loader.js:1050:32)\n    at Function.Module._load (internal/modules/cjs/loader.js:938:14)\n    at Module.require (internal/modules/cjs/loader.js:1090:19)\n    at require (internal/modules/cjs/helpers.js:75:18)\n    at C:\\Users\\MC\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\functionsEmulatorRuntime.js:698:33\n    at Generator.next (<anonymous>)\n    at fulfilled (C:\\Users\\MC\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\functionsEmulatorRuntime.js:5:58)"}}
+[warn] !  We were unable to load your functions code. (see above) {"metadata":{"emulator":{"name":"functions"}}}
+[debug] [2020-11-13T15:58:15.310Z] DEBUG: [worker-~diagnostic~-d8b6e8a1-a895-4d0e-b90b-2cce3ca01e21]: exited
+[debug] [2020-11-13T15:58:15.310Z] DEBUG: [worker-~diagnostic~-d8b6e8a1-a895-4d0e-b90b-2cce3ca01e21]: FINISHED
+[debug] [2020-11-13T15:58:21.111Z] DEBUG: File C:\Users\MC\Downloads\newReCoded\Capstone project\send-form-email\functions\index.js changed, reloading triggers
+[debug] [2020-11-13T15:58:22.112Z] DEBUG: [worker-pool] Cleaned up workers for ~diagnostic~: 1 --> 0
+[debug] [2020-11-13T15:58:22.137Z] DEBUG: [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-11-13T15:58:22.137Z] DEBUG: [worker-pool] Adding worker with key ~diagnostic~, total=1
+[debug] [2020-11-13T15:58:22.138Z] DEBUG: [worker-pool] submitWork(triggerId=)
+[debug] [2020-11-13T15:58:22.138Z] DEBUG: [worker-~diagnostic~-9081dadf-ae4c-4024-bc26-77f759f68562]: Assigning socketPath: \\?\pipe\C:\Users\MC\Downloads\newReCoded\Capstone project\send-form-email\functions\16408
+[debug] [2020-11-13T15:58:22.138Z] DEBUG: [worker-~diagnostic~-9081dadf-ae4c-4024-bc26-77f759f68562]: BUSY
+[debug] [2020-11-13T15:58:22.670Z] DEBUG: [runtime-status] [16408] Functions runtime initialized. {"cwd":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions","node_version":"14.5.0"}
+[debug] [2020-11-13T15:58:22.675Z] DEBUG: [runtime-status] [16408] Disabled runtime features: undefined
+[debug] [2020-11-13T15:58:22.680Z] DEBUG: [runtime-status] [16408] Resolved module firebase-admin {"declared":true,"installed":true,"version":"9.4.0","resolution":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2020-11-13T15:58:22.685Z] DEBUG: [runtime-status] [16408] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.11.0","resolution":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-11-13T15:58:22.688Z] DEBUG: [runtime-status] [16408] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.11.0","resolution":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-11-13T15:58:22.690Z] DEBUG: [runtime-status] [16408] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}]
+[debug] [2020-11-13T15:58:22.691Z] DEBUG: [runtime-status] [16408] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.11.0","resolution":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-11-13T15:58:22.745Z] DEBUG: [runtime-status] [16408] Checked functions.config() {"config":{}}
+[debug] [2020-11-13T15:58:22.745Z] DEBUG: [runtime-status] [16408] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"3.11.0","resolution":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\node_modules\\firebase-functions\\lib\\index.js"}}
+[debug] [2020-11-13T15:58:22.746Z] DEBUG: [runtime-status] [16408] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.11.0","resolution":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-11-13T15:58:22.747Z] DEBUG: [runtime-status] [16408] Resolved module firebase-admin {"declared":true,"installed":true,"version":"9.4.0","resolution":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2020-11-13T15:58:22.747Z] DEBUG: [runtime-status] [16408] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.11.0","resolution":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-11-13T15:58:22.748Z] DEBUG: [runtime-status] [16408] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"9.4.0","resolution":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\node_modules\\firebase-admin\\lib\\index.js"}}
+[warn] !  TypeError: Cannot read property 'email' of undefined
+    at Object.<anonymous> (C:\Users\MC\Downloads\newReCoded\Capstone project\send-form-email\functions\index.js:7:44)
+    at Module._compile (internal/modules/cjs/loader.js:1201:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1221:10)
+    at Module.load (internal/modules/cjs/loader.js:1050:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:938:14)
+    at Module.require (internal/modules/cjs/loader.js:1090:19)
+    at require (internal/modules/cjs/helpers.js:75:18)
+    at C:\Users\MC\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulatorRuntime.js:698:33
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\MC\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulatorRuntime.js:5:58) {"metadata":{"emulator":{"name":"functions"},"message":"TypeError: Cannot read property 'email' of undefined\n    at Object.<anonymous> (C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\index.js:7:44)\n    at Module._compile (internal/modules/cjs/loader.js:1201:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1221:10)\n    at Module.load (internal/modules/cjs/loader.js:1050:32)\n    at Function.Module._load (internal/modules/cjs/loader.js:938:14)\n    at Module.require (internal/modules/cjs/loader.js:1090:19)\n    at require (internal/modules/cjs/helpers.js:75:18)\n    at C:\\Users\\MC\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\functionsEmulatorRuntime.js:698:33\n    at Generator.next (<anonymous>)\n    at fulfilled (C:\\Users\\MC\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\functionsEmulatorRuntime.js:5:58)"}}
+[warn] !  We were unable to load your functions code. (see above) {"metadata":{"emulator":{"name":"functions"}}}
+[debug] [2020-11-13T15:58:22.834Z] DEBUG: [worker-~diagnostic~-9081dadf-ae4c-4024-bc26-77f759f68562]: exited
+[debug] [2020-11-13T15:58:22.834Z] DEBUG: [worker-~diagnostic~-9081dadf-ae4c-4024-bc26-77f759f68562]: FINISHED
+[debug] [2020-11-13T15:58:51.612Z] DEBUG: File C:\Users\MC\Downloads\newReCoded\Capstone project\send-form-email\functions\index.js changed, reloading triggers
+[debug] [2020-11-13T15:58:52.614Z] DEBUG: [worker-pool] Cleaned up workers for ~diagnostic~: 1 --> 0
+[debug] [2020-11-13T15:58:52.638Z] DEBUG: [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-11-13T15:58:52.638Z] DEBUG: [worker-pool] Adding worker with key ~diagnostic~, total=1
+[debug] [2020-11-13T15:58:52.638Z] DEBUG: [worker-pool] submitWork(triggerId=)
+[debug] [2020-11-13T15:58:52.639Z] DEBUG: [worker-~diagnostic~-16b862e2-2a4e-4453-8f83-2cb903395ecc]: Assigning socketPath: \\?\pipe\C:\Users\MC\Downloads\newReCoded\Capstone project\send-form-email\functions\16120
+[debug] [2020-11-13T15:58:52.639Z] DEBUG: [worker-~diagnostic~-16b862e2-2a4e-4453-8f83-2cb903395ecc]: BUSY
+[debug] [2020-11-13T15:58:53.072Z] DEBUG: [runtime-status] [16120] Functions runtime initialized. {"cwd":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions","node_version":"14.5.0"}
+[debug] [2020-11-13T15:58:53.076Z] DEBUG: [runtime-status] [16120] Disabled runtime features: undefined
+[debug] [2020-11-13T15:58:53.080Z] DEBUG: [runtime-status] [16120] Resolved module firebase-admin {"declared":true,"installed":true,"version":"9.4.0","resolution":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2020-11-13T15:58:53.083Z] DEBUG: [runtime-status] [16120] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.11.0","resolution":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-11-13T15:58:53.085Z] DEBUG: [runtime-status] [16120] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.11.0","resolution":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-11-13T15:58:53.086Z] DEBUG: [runtime-status] [16120] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}]
+[debug] [2020-11-13T15:58:53.087Z] DEBUG: [runtime-status] [16120] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.11.0","resolution":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-11-13T15:58:53.131Z] DEBUG: [runtime-status] [16120] Checked functions.config() {"config":{}}
+[debug] [2020-11-13T15:58:53.132Z] DEBUG: [runtime-status] [16120] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"3.11.0","resolution":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\node_modules\\firebase-functions\\lib\\index.js"}}
+[debug] [2020-11-13T15:58:53.132Z] DEBUG: [runtime-status] [16120] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.11.0","resolution":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-11-13T15:58:53.133Z] DEBUG: [runtime-status] [16120] Resolved module firebase-admin {"declared":true,"installed":true,"version":"9.4.0","resolution":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2020-11-13T15:58:53.134Z] DEBUG: [runtime-status] [16120] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.11.0","resolution":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-11-13T15:58:53.134Z] DEBUG: [runtime-status] [16120] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"9.4.0","resolution":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\node_modules\\firebase-admin\\lib\\index.js"}}
+[warn] !  TypeError: Cannot read property 'email' of undefined
+    at Object.<anonymous> (C:\Users\MC\Downloads\newReCoded\Capstone project\send-form-email\functions\index.js:7:44)
+    at Module._compile (internal/modules/cjs/loader.js:1201:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1221:10)
+    at Module.load (internal/modules/cjs/loader.js:1050:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:938:14)
+    at Module.require (internal/modules/cjs/loader.js:1090:19)
+    at require (internal/modules/cjs/helpers.js:75:18)
+    at C:\Users\MC\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulatorRuntime.js:698:33
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\MC\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulatorRuntime.js:5:58) {"metadata":{"emulator":{"name":"functions"},"message":"TypeError: Cannot read property 'email' of undefined\n    at Object.<anonymous> (C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\index.js:7:44)\n    at Module._compile (internal/modules/cjs/loader.js:1201:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1221:10)\n    at Module.load (internal/modules/cjs/loader.js:1050:32)\n    at Function.Module._load (internal/modules/cjs/loader.js:938:14)\n    at Module.require (internal/modules/cjs/loader.js:1090:19)\n    at require (internal/modules/cjs/helpers.js:75:18)\n    at C:\\Users\\MC\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\functionsEmulatorRuntime.js:698:33\n    at Generator.next (<anonymous>)\n    at fulfilled (C:\\Users\\MC\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\functionsEmulatorRuntime.js:5:58)"}}
+[warn] !  We were unable to load your functions code. (see above) {"metadata":{"emulator":{"name":"functions"}}}
+[debug] [2020-11-13T15:58:53.215Z] DEBUG: [worker-~diagnostic~-16b862e2-2a4e-4453-8f83-2cb903395ecc]: exited
+[debug] [2020-11-13T15:58:53.215Z] DEBUG: [worker-~diagnostic~-16b862e2-2a4e-4453-8f83-2cb903395ecc]: FINISHED
+[debug] [2020-11-13T15:58:53.372Z] DEBUG: File C:\Users\MC\Downloads\newReCoded\Capstone project\send-form-email\functions\index.js changed, reloading triggers
+[debug] [2020-11-13T15:58:54.372Z] DEBUG: [worker-pool] Cleaned up workers for ~diagnostic~: 1 --> 0
+[debug] [2020-11-13T15:58:54.392Z] DEBUG: [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-11-13T15:58:54.393Z] DEBUG: [worker-pool] Adding worker with key ~diagnostic~, total=1
+[debug] [2020-11-13T15:58:54.393Z] DEBUG: [worker-pool] submitWork(triggerId=)
+[debug] [2020-11-13T15:58:54.393Z] DEBUG: [worker-~diagnostic~-130587f8-f86a-4547-ae4b-c1015221359e]: Assigning socketPath: \\?\pipe\C:\Users\MC\Downloads\newReCoded\Capstone project\send-form-email\functions\2036
+[debug] [2020-11-13T15:58:54.393Z] DEBUG: [worker-~diagnostic~-130587f8-f86a-4547-ae4b-c1015221359e]: BUSY
+[debug] [2020-11-13T15:58:54.822Z] DEBUG: [runtime-status] [2036] Functions runtime initialized. {"cwd":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions","node_version":"14.5.0"}
+[debug] [2020-11-13T15:58:54.826Z] DEBUG: [runtime-status] [2036] Disabled runtime features: undefined
+[debug] [2020-11-13T15:58:54.830Z] DEBUG: [runtime-status] [2036] Resolved module firebase-admin {"declared":true,"installed":true,"version":"9.4.0","resolution":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2020-11-13T15:58:54.833Z] DEBUG: [runtime-status] [2036] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.11.0","resolution":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-11-13T15:58:54.835Z] DEBUG: [runtime-status] [2036] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.11.0","resolution":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-11-13T15:58:54.837Z] DEBUG: [runtime-status] [2036] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}]
+[debug] [2020-11-13T15:58:54.837Z] DEBUG: [runtime-status] [2036] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.11.0","resolution":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-11-13T15:58:54.887Z] DEBUG: [runtime-status] [2036] Checked functions.config() {"config":{}}
+[debug] [2020-11-13T15:58:54.887Z] DEBUG: [runtime-status] [2036] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"3.11.0","resolution":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\node_modules\\firebase-functions\\lib\\index.js"}}
+[debug] [2020-11-13T15:58:54.888Z] DEBUG: [runtime-status] [2036] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.11.0","resolution":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-11-13T15:58:54.889Z] DEBUG: [runtime-status] [2036] Resolved module firebase-admin {"declared":true,"installed":true,"version":"9.4.0","resolution":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2020-11-13T15:58:54.890Z] DEBUG: [runtime-status] [2036] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.11.0","resolution":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-11-13T15:58:54.890Z] DEBUG: [runtime-status] [2036] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"9.4.0","resolution":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\node_modules\\firebase-admin\\lib\\index.js"}}
+[warn] !  TypeError: Cannot read property 'email' of undefined
+    at Object.<anonymous> (C:\Users\MC\Downloads\newReCoded\Capstone project\send-form-email\functions\index.js:7:44)
+    at Module._compile (internal/modules/cjs/loader.js:1201:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1221:10)
+    at Module.load (internal/modules/cjs/loader.js:1050:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:938:14)
+    at Module.require (internal/modules/cjs/loader.js:1090:19)
+    at require (internal/modules/cjs/helpers.js:75:18)
+    at C:\Users\MC\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulatorRuntime.js:698:33
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\MC\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulatorRuntime.js:5:58) {"metadata":{"emulator":{"name":"functions"},"message":"TypeError: Cannot read property 'email' of undefined\n    at Object.<anonymous> (C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\index.js:7:44)\n    at Module._compile (internal/modules/cjs/loader.js:1201:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1221:10)\n    at Module.load (internal/modules/cjs/loader.js:1050:32)\n    at Function.Module._load (internal/modules/cjs/loader.js:938:14)\n    at Module.require (internal/modules/cjs/loader.js:1090:19)\n    at require (internal/modules/cjs/helpers.js:75:18)\n    at C:\\Users\\MC\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\functionsEmulatorRuntime.js:698:33\n    at Generator.next (<anonymous>)\n    at fulfilled (C:\\Users\\MC\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\functionsEmulatorRuntime.js:5:58)"}}
+[warn] !  We were unable to load your functions code. (see above) {"metadata":{"emulator":{"name":"functions"}}}
+[debug] [2020-11-13T15:58:54.967Z] DEBUG: [worker-~diagnostic~-130587f8-f86a-4547-ae4b-c1015221359e]: exited
+[debug] [2020-11-13T15:58:54.967Z] DEBUG: [worker-~diagnostic~-130587f8-f86a-4547-ae4b-c1015221359e]: FINISHED
+[debug] [2020-11-13T15:58:56.269Z] DEBUG: File C:\Users\MC\Downloads\newReCoded\Capstone project\send-form-email\functions\index.js changed, reloading triggers
+[debug] [2020-11-13T15:58:57.271Z] DEBUG: [worker-pool] Cleaned up workers for ~diagnostic~: 1 --> 0
+[debug] [2020-11-13T15:58:57.283Z] DEBUG: [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-11-13T15:58:57.283Z] DEBUG: [worker-pool] Adding worker with key ~diagnostic~, total=1
+[debug] [2020-11-13T15:58:57.283Z] DEBUG: [worker-pool] submitWork(triggerId=)
+[debug] [2020-11-13T15:58:57.283Z] DEBUG: [worker-~diagnostic~-b8157cea-8b46-4871-86ea-27d2f3f85c5d]: Assigning socketPath: \\?\pipe\C:\Users\MC\Downloads\newReCoded\Capstone project\send-form-email\functions\3204
+[debug] [2020-11-13T15:58:57.283Z] DEBUG: [worker-~diagnostic~-b8157cea-8b46-4871-86ea-27d2f3f85c5d]: BUSY
+[debug] [2020-11-13T15:58:57.694Z] DEBUG: [runtime-status] [3204] Functions runtime initialized. {"cwd":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions","node_version":"14.5.0"}
+[debug] [2020-11-13T15:58:57.698Z] DEBUG: [runtime-status] [3204] Disabled runtime features: undefined
+[debug] [2020-11-13T15:58:57.701Z] DEBUG: [runtime-status] [3204] Resolved module firebase-admin {"declared":true,"installed":true,"version":"9.4.0","resolution":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2020-11-13T15:58:57.705Z] DEBUG: [runtime-status] [3204] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.11.0","resolution":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-11-13T15:58:57.706Z] DEBUG: [runtime-status] [3204] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.11.0","resolution":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-11-13T15:58:57.708Z] DEBUG: [runtime-status] [3204] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}]
+[debug] [2020-11-13T15:58:57.708Z] DEBUG: [runtime-status] [3204] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.11.0","resolution":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-11-13T15:58:57.752Z] DEBUG: [runtime-status] [3204] Checked functions.config() {"config":{}}
+[debug] [2020-11-13T15:58:57.753Z] DEBUG: [runtime-status] [3204] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"3.11.0","resolution":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\node_modules\\firebase-functions\\lib\\index.js"}}
+[debug] [2020-11-13T15:58:57.753Z] DEBUG: [runtime-status] [3204] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.11.0","resolution":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-11-13T15:58:57.755Z] DEBUG: [runtime-status] [3204] Resolved module firebase-admin {"declared":true,"installed":true,"version":"9.4.0","resolution":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2020-11-13T15:58:57.755Z] DEBUG: [runtime-status] [3204] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.11.0","resolution":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-11-13T15:58:57.756Z] DEBUG: [runtime-status] [3204] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"9.4.0","resolution":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\node_modules\\firebase-admin\\lib\\index.js"}}
+[warn] !  TypeError: Cannot read property 'email' of undefined
+    at Object.<anonymous> (C:\Users\MC\Downloads\newReCoded\Capstone project\send-form-email\functions\index.js:7:44)
+    at Module._compile (internal/modules/cjs/loader.js:1201:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1221:10)
+    at Module.load (internal/modules/cjs/loader.js:1050:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:938:14)
+    at Module.require (internal/modules/cjs/loader.js:1090:19)
+    at require (internal/modules/cjs/helpers.js:75:18)
+    at C:\Users\MC\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulatorRuntime.js:698:33
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\MC\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulatorRuntime.js:5:58) {"metadata":{"emulator":{"name":"functions"},"message":"TypeError: Cannot read property 'email' of undefined\n    at Object.<anonymous> (C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\index.js:7:44)\n    at Module._compile (internal/modules/cjs/loader.js:1201:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1221:10)\n    at Module.load (internal/modules/cjs/loader.js:1050:32)\n    at Function.Module._load (internal/modules/cjs/loader.js:938:14)\n    at Module.require (internal/modules/cjs/loader.js:1090:19)\n    at require (internal/modules/cjs/helpers.js:75:18)\n    at C:\\Users\\MC\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\functionsEmulatorRuntime.js:698:33\n    at Generator.next (<anonymous>)\n    at fulfilled (C:\\Users\\MC\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\functionsEmulatorRuntime.js:5:58)"}}
+[warn] !  We were unable to load your functions code. (see above) {"metadata":{"emulator":{"name":"functions"}}}
+[debug] [2020-11-13T15:58:57.833Z] DEBUG: [worker-~diagnostic~-b8157cea-8b46-4871-86ea-27d2f3f85c5d]: exited
+[debug] [2020-11-13T15:58:57.833Z] DEBUG: [worker-~diagnostic~-b8157cea-8b46-4871-86ea-27d2f3f85c5d]: FINISHED
+[debug] [2020-11-13T15:58:58.269Z] DEBUG: File C:\Users\MC\Downloads\newReCoded\Capstone project\send-form-email\functions\index.js changed, reloading triggers
+[debug] [2020-11-13T15:58:59.271Z] DEBUG: [worker-pool] Cleaned up workers for ~diagnostic~: 1 --> 0
+[debug] [2020-11-13T15:58:59.295Z] DEBUG: [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-11-13T15:58:59.296Z] DEBUG: [worker-pool] Adding worker with key ~diagnostic~, total=1
+[debug] [2020-11-13T15:58:59.296Z] DEBUG: [worker-pool] submitWork(triggerId=)
+[debug] [2020-11-13T15:58:59.297Z] DEBUG: [worker-~diagnostic~-e46386ce-7353-4ee9-badc-368c12da131f]: Assigning socketPath: \\?\pipe\C:\Users\MC\Downloads\newReCoded\Capstone project\send-form-email\functions\10752
+[debug] [2020-11-13T15:58:59.297Z] DEBUG: [worker-~diagnostic~-e46386ce-7353-4ee9-badc-368c12da131f]: BUSY
+[debug] [2020-11-13T15:58:59.742Z] DEBUG: [runtime-status] [10752] Functions runtime initialized. {"cwd":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions","node_version":"14.5.0"}
+[debug] [2020-11-13T15:58:59.746Z] DEBUG: [runtime-status] [10752] Disabled runtime features: undefined
+[debug] [2020-11-13T15:58:59.750Z] DEBUG: [runtime-status] [10752] Resolved module firebase-admin {"declared":true,"installed":true,"version":"9.4.0","resolution":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2020-11-13T15:58:59.755Z] DEBUG: [runtime-status] [10752] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.11.0","resolution":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-11-13T15:58:59.757Z] DEBUG: [runtime-status] [10752] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.11.0","resolution":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-11-13T15:58:59.759Z] DEBUG: [runtime-status] [10752] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}]
+[debug] [2020-11-13T15:58:59.760Z] DEBUG: [runtime-status] [10752] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.11.0","resolution":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-11-13T15:58:59.806Z] DEBUG: [runtime-status] [10752] Checked functions.config() {"config":{}}
+[debug] [2020-11-13T15:58:59.806Z] DEBUG: [runtime-status] [10752] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"3.11.0","resolution":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\node_modules\\firebase-functions\\lib\\index.js"}}
+[debug] [2020-11-13T15:58:59.807Z] DEBUG: [runtime-status] [10752] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.11.0","resolution":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-11-13T15:58:59.808Z] DEBUG: [runtime-status] [10752] Resolved module firebase-admin {"declared":true,"installed":true,"version":"9.4.0","resolution":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2020-11-13T15:58:59.809Z] DEBUG: [runtime-status] [10752] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.11.0","resolution":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-11-13T15:58:59.809Z] DEBUG: [runtime-status] [10752] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"9.4.0","resolution":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\node_modules\\firebase-admin\\lib\\index.js"}}
+[warn] !  TypeError: Cannot read property 'email' of undefined
+    at Object.<anonymous> (C:\Users\MC\Downloads\newReCoded\Capstone project\send-form-email\functions\index.js:7:44)
+    at Module._compile (internal/modules/cjs/loader.js:1201:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1221:10)
+    at Module.load (internal/modules/cjs/loader.js:1050:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:938:14)
+    at Module.require (internal/modules/cjs/loader.js:1090:19)
+    at require (internal/modules/cjs/helpers.js:75:18)
+    at C:\Users\MC\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulatorRuntime.js:698:33
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\MC\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulatorRuntime.js:5:58) {"metadata":{"emulator":{"name":"functions"},"message":"TypeError: Cannot read property 'email' of undefined\n    at Object.<anonymous> (C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\index.js:7:44)\n    at Module._compile (internal/modules/cjs/loader.js:1201:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1221:10)\n    at Module.load (internal/modules/cjs/loader.js:1050:32)\n    at Function.Module._load (internal/modules/cjs/loader.js:938:14)\n    at Module.require (internal/modules/cjs/loader.js:1090:19)\n    at require (internal/modules/cjs/helpers.js:75:18)\n    at C:\\Users\\MC\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\functionsEmulatorRuntime.js:698:33\n    at Generator.next (<anonymous>)\n    at fulfilled (C:\\Users\\MC\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\functionsEmulatorRuntime.js:5:58)"}}
+[warn] !  We were unable to load your functions code. (see above) {"metadata":{"emulator":{"name":"functions"}}}
+[debug] [2020-11-13T15:58:59.889Z] DEBUG: [worker-~diagnostic~-e46386ce-7353-4ee9-badc-368c12da131f]: exited
+[debug] [2020-11-13T15:58:59.889Z] DEBUG: [worker-~diagnostic~-e46386ce-7353-4ee9-badc-368c12da131f]: FINISHED
+[debug] [2020-11-13T15:59:04.390Z] DEBUG: File C:\Users\MC\Downloads\newReCoded\Capstone project\send-form-email\functions\index.js changed, reloading triggers
+[debug] [2020-11-13T15:59:05.391Z] DEBUG: [worker-pool] Cleaned up workers for ~diagnostic~: 1 --> 0
+[debug] [2020-11-13T15:59:05.414Z] DEBUG: [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-11-13T15:59:05.414Z] DEBUG: [worker-pool] Adding worker with key ~diagnostic~, total=1
+[debug] [2020-11-13T15:59:05.415Z] DEBUG: [worker-pool] submitWork(triggerId=)
+[debug] [2020-11-13T15:59:05.415Z] DEBUG: [worker-~diagnostic~-cbdd44fa-539a-42a0-aa2d-8d8e1e5c331b]: Assigning socketPath: \\?\pipe\C:\Users\MC\Downloads\newReCoded\Capstone project\send-form-email\functions\9156
+[debug] [2020-11-13T15:59:05.416Z] DEBUG: [worker-~diagnostic~-cbdd44fa-539a-42a0-aa2d-8d8e1e5c331b]: BUSY
+[debug] [2020-11-13T15:59:05.866Z] DEBUG: [runtime-status] [9156] Functions runtime initialized. {"cwd":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions","node_version":"14.5.0"}
+[debug] [2020-11-13T15:59:05.867Z] DEBUG: [runtime-status] [9156] Disabled runtime features: undefined
+[debug] [2020-11-13T15:59:05.871Z] DEBUG: [runtime-status] [9156] Resolved module firebase-admin {"declared":true,"installed":true,"version":"9.4.0","resolution":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2020-11-13T15:59:05.873Z] DEBUG: [runtime-status] [9156] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.11.0","resolution":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-11-13T15:59:05.874Z] DEBUG: [runtime-status] [9156] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.11.0","resolution":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-11-13T15:59:05.876Z] DEBUG: [runtime-status] [9156] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}]
+[debug] [2020-11-13T15:59:05.877Z] DEBUG: [runtime-status] [9156] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.11.0","resolution":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-11-13T15:59:05.928Z] DEBUG: [runtime-status] [9156] Checked functions.config() {"config":{}}
+[debug] [2020-11-13T15:59:05.928Z] DEBUG: [runtime-status] [9156] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"3.11.0","resolution":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\node_modules\\firebase-functions\\lib\\index.js"}}
+[debug] [2020-11-13T15:59:05.929Z] DEBUG: [runtime-status] [9156] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.11.0","resolution":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-11-13T15:59:05.930Z] DEBUG: [runtime-status] [9156] Resolved module firebase-admin {"declared":true,"installed":true,"version":"9.4.0","resolution":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2020-11-13T15:59:05.931Z] DEBUG: [runtime-status] [9156] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.11.0","resolution":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-11-13T15:59:05.931Z] DEBUG: [runtime-status] [9156] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"9.4.0","resolution":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\node_modules\\firebase-admin\\lib\\index.js"}}
+[debug] [2020-11-13T15:59:05.978Z] DEBUG: File C:\Users\MC\Downloads\newReCoded\Capstone project\send-form-email\functions\index.js changed, reloading triggers
+[warn] !  TypeError: Cannot read property 'email' of undefined
+    at Object.<anonymous> (C:\Users\MC\Downloads\newReCoded\Capstone project\send-form-email\functions\index.js:7:44)
+    at Module._compile (internal/modules/cjs/loader.js:1201:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1221:10)
+    at Module.load (internal/modules/cjs/loader.js:1050:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:938:14)
+    at Module.require (internal/modules/cjs/loader.js:1090:19)
+    at require (internal/modules/cjs/helpers.js:75:18)
+    at C:\Users\MC\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulatorRuntime.js:698:33
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\MC\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulatorRuntime.js:5:58) {"metadata":{"emulator":{"name":"functions"},"message":"TypeError: Cannot read property 'email' of undefined\n    at Object.<anonymous> (C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\index.js:7:44)\n    at Module._compile (internal/modules/cjs/loader.js:1201:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1221:10)\n    at Module.load (internal/modules/cjs/loader.js:1050:32)\n    at Function.Module._load (internal/modules/cjs/loader.js:938:14)\n    at Module.require (internal/modules/cjs/loader.js:1090:19)\n    at require (internal/modules/cjs/helpers.js:75:18)\n    at C:\\Users\\MC\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\functionsEmulatorRuntime.js:698:33\n    at Generator.next (<anonymous>)\n    at fulfilled (C:\\Users\\MC\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\functionsEmulatorRuntime.js:5:58)"}}
+[warn] !  We were unable to load your functions code. (see above) {"metadata":{"emulator":{"name":"functions"}}}
+[debug] [2020-11-13T15:59:06.016Z] DEBUG: [worker-~diagnostic~-cbdd44fa-539a-42a0-aa2d-8d8e1e5c331b]: exited
+[debug] [2020-11-13T15:59:06.016Z] DEBUG: [worker-~diagnostic~-cbdd44fa-539a-42a0-aa2d-8d8e1e5c331b]: FINISHED
+[debug] [2020-11-13T15:59:06.979Z] DEBUG: [worker-pool] Cleaned up workers for ~diagnostic~: 1 --> 0
+[debug] [2020-11-13T15:59:06.986Z] DEBUG: [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-11-13T15:59:06.986Z] DEBUG: [worker-pool] Adding worker with key ~diagnostic~, total=1
+[debug] [2020-11-13T15:59:06.986Z] DEBUG: [worker-pool] submitWork(triggerId=)
+[debug] [2020-11-13T15:59:06.986Z] DEBUG: [worker-~diagnostic~-1813dcaf-5b0e-4e95-991a-449f79e7d88a]: Assigning socketPath: \\?\pipe\C:\Users\MC\Downloads\newReCoded\Capstone project\send-form-email\functions\12476
+[debug] [2020-11-13T15:59:06.986Z] DEBUG: [worker-~diagnostic~-1813dcaf-5b0e-4e95-991a-449f79e7d88a]: BUSY
+[debug] [2020-11-13T15:59:07.444Z] DEBUG: [runtime-status] [12476] Functions runtime initialized. {"cwd":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions","node_version":"14.5.0"}
+[debug] [2020-11-13T15:59:07.449Z] DEBUG: [runtime-status] [12476] Disabled runtime features: undefined
+[debug] [2020-11-13T15:59:07.455Z] DEBUG: [runtime-status] [12476] Resolved module firebase-admin {"declared":true,"installed":true,"version":"9.4.0","resolution":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2020-11-13T15:59:07.457Z] DEBUG: [runtime-status] [12476] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.11.0","resolution":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-11-13T15:59:07.458Z] DEBUG: [runtime-status] [12476] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.11.0","resolution":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-11-13T15:59:07.460Z] DEBUG: [runtime-status] [12476] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}]
+[debug] [2020-11-13T15:59:07.461Z] DEBUG: [runtime-status] [12476] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.11.0","resolution":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-11-13T15:59:07.509Z] DEBUG: [runtime-status] [12476] Checked functions.config() {"config":{}}
+[debug] [2020-11-13T15:59:07.509Z] DEBUG: [runtime-status] [12476] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"3.11.0","resolution":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\node_modules\\firebase-functions\\lib\\index.js"}}
+[debug] [2020-11-13T15:59:07.509Z] DEBUG: [runtime-status] [12476] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.11.0","resolution":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-11-13T15:59:07.511Z] DEBUG: [runtime-status] [12476] Resolved module firebase-admin {"declared":true,"installed":true,"version":"9.4.0","resolution":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2020-11-13T15:59:07.511Z] DEBUG: [runtime-status] [12476] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.11.0","resolution":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-11-13T15:59:07.511Z] DEBUG: [runtime-status] [12476] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"9.4.0","resolution":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\node_modules\\firebase-admin\\lib\\index.js"}}
+[warn] !  TypeError: Cannot read property 'email' of undefined
+    at Object.<anonymous> (C:\Users\MC\Downloads\newReCoded\Capstone project\send-form-email\functions\index.js:7:44)
+    at Module._compile (internal/modules/cjs/loader.js:1201:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1221:10)
+    at Module.load (internal/modules/cjs/loader.js:1050:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:938:14)
+    at Module.require (internal/modules/cjs/loader.js:1090:19)
+    at require (internal/modules/cjs/helpers.js:75:18)
+    at C:\Users\MC\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulatorRuntime.js:698:33
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\MC\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulatorRuntime.js:5:58) {"metadata":{"emulator":{"name":"functions"},"message":"TypeError: Cannot read property 'email' of undefined\n    at Object.<anonymous> (C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\index.js:7:44)\n    at Module._compile (internal/modules/cjs/loader.js:1201:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1221:10)\n    at Module.load (internal/modules/cjs/loader.js:1050:32)\n    at Function.Module._load (internal/modules/cjs/loader.js:938:14)\n    at Module.require (internal/modules/cjs/loader.js:1090:19)\n    at require (internal/modules/cjs/helpers.js:75:18)\n    at C:\\Users\\MC\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\functionsEmulatorRuntime.js:698:33\n    at Generator.next (<anonymous>)\n    at fulfilled (C:\\Users\\MC\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\functionsEmulatorRuntime.js:5:58)"}}
+[warn] !  We were unable to load your functions code. (see above) {"metadata":{"emulator":{"name":"functions"}}}
+[debug] [2020-11-13T15:59:07.594Z] DEBUG: [worker-~diagnostic~-1813dcaf-5b0e-4e95-991a-449f79e7d88a]: exited
+[debug] [2020-11-13T15:59:07.594Z] DEBUG: [worker-~diagnostic~-1813dcaf-5b0e-4e95-991a-449f79e7d88a]: FINISHED
+[debug] [2020-11-13T16:05:25.247Z] DEBUG: File C:\Users\MC\Downloads\newReCoded\Capstone project\send-form-email\functions\index.js changed, reloading triggers
+[debug] [2020-11-13T16:05:26.247Z] DEBUG: [worker-pool] Cleaned up workers for ~diagnostic~: 1 --> 0
+[debug] [2020-11-13T16:05:26.272Z] DEBUG: [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-11-13T16:05:26.272Z] DEBUG: [worker-pool] Adding worker with key ~diagnostic~, total=1
+[debug] [2020-11-13T16:05:26.273Z] DEBUG: [worker-pool] submitWork(triggerId=)
+[debug] [2020-11-13T16:05:26.273Z] DEBUG: [worker-~diagnostic~-0c9d58a1-6847-41ee-a90d-9cf28bbb4a25]: Assigning socketPath: \\?\pipe\C:\Users\MC\Downloads\newReCoded\Capstone project\send-form-email\functions\16840
+[debug] [2020-11-13T16:05:26.274Z] DEBUG: [worker-~diagnostic~-0c9d58a1-6847-41ee-a90d-9cf28bbb4a25]: BUSY
+[debug] [2020-11-13T16:05:26.715Z] DEBUG: [runtime-status] [16840] Functions runtime initialized. {"cwd":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions","node_version":"14.5.0"}
+[debug] [2020-11-13T16:05:26.717Z] DEBUG: [runtime-status] [16840] Disabled runtime features: undefined
+[debug] [2020-11-13T16:05:26.720Z] DEBUG: [runtime-status] [16840] Resolved module firebase-admin {"declared":true,"installed":true,"version":"9.4.0","resolution":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2020-11-13T16:05:26.722Z] DEBUG: [runtime-status] [16840] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.11.0","resolution":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-11-13T16:05:26.724Z] DEBUG: [runtime-status] [16840] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.11.0","resolution":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-11-13T16:05:26.725Z] DEBUG: [runtime-status] [16840] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}]
+[debug] [2020-11-13T16:05:26.726Z] DEBUG: [runtime-status] [16840] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.11.0","resolution":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-11-13T16:05:26.783Z] DEBUG: [runtime-status] [16840] Checked functions.config() {"config":{}}
+[debug] [2020-11-13T16:05:26.783Z] DEBUG: [runtime-status] [16840] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"3.11.0","resolution":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\node_modules\\firebase-functions\\lib\\index.js"}}
+[debug] [2020-11-13T16:05:26.784Z] DEBUG: [runtime-status] [16840] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.11.0","resolution":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-11-13T16:05:26.785Z] DEBUG: [runtime-status] [16840] Resolved module firebase-admin {"declared":true,"installed":true,"version":"9.4.0","resolution":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2020-11-13T16:05:26.786Z] DEBUG: [runtime-status] [16840] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.11.0","resolution":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-11-13T16:05:26.786Z] DEBUG: [runtime-status] [16840] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"9.4.0","resolution":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\node_modules\\firebase-admin\\lib\\index.js"}}
+[warn] !  C:\Users\MC\Downloads\newReCoded\Capstone project\send-form-email\functions\index.js:50
+view rawindex.js hosted with ❤ by GitHub
+     ^^^^^^^^
+
+SyntaxError: Unexpected identifier
+    at wrapSafe (internal/modules/cjs/loader.js:1117:16)
+    at Module._compile (internal/modules/cjs/loader.js:1165:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1221:10)
+    at Module.load (internal/modules/cjs/loader.js:1050:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:938:14)
+    at Module.require (internal/modules/cjs/loader.js:1090:19)
+    at require (internal/modules/cjs/helpers.js:75:18)
+    at C:\Users\MC\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulatorRuntime.js:698:33
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\MC\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulatorRuntime.js:5:58) {"metadata":{"emulator":{"name":"functions"},"message":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\index.js:50\nview rawindex.js hosted with ❤ by GitHub\n     ^^^^^^^^\n\nSyntaxError: Unexpected identifier\n    at wrapSafe (internal/modules/cjs/loader.js:1117:16)\n    at Module._compile (internal/modules/cjs/loader.js:1165:27)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1221:10)\n    at Module.load (internal/modules/cjs/loader.js:1050:32)\n    at Function.Module._load (internal/modules/cjs/loader.js:938:14)\n    at Module.require (internal/modules/cjs/loader.js:1090:19)\n    at require (internal/modules/cjs/helpers.js:75:18)\n    at C:\\Users\\MC\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\functionsEmulatorRuntime.js:698:33\n    at Generator.next (<anonymous>)\n    at fulfilled (C:\\Users\\MC\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\functionsEmulatorRuntime.js:5:58)"}}
+[warn] !  We were unable to load your functions code. (see above) {"metadata":{"emulator":{"name":"functions"}}}
+[debug] [2020-11-13T16:05:26.812Z] DEBUG: [worker-~diagnostic~-0c9d58a1-6847-41ee-a90d-9cf28bbb4a25]: exited
+[debug] [2020-11-13T16:05:26.812Z] DEBUG: [worker-~diagnostic~-0c9d58a1-6847-41ee-a90d-9cf28bbb4a25]: FINISHED
+[debug] [2020-11-13T16:05:32.085Z] DEBUG: File C:\Users\MC\Downloads\newReCoded\Capstone project\send-form-email\functions\index.js changed, reloading triggers
+[debug] [2020-11-13T16:05:33.086Z] DEBUG: [worker-pool] Cleaned up workers for ~diagnostic~: 1 --> 0
+[debug] [2020-11-13T16:05:33.093Z] DEBUG: [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-11-13T16:05:33.093Z] DEBUG: [worker-pool] Adding worker with key ~diagnostic~, total=1
+[debug] [2020-11-13T16:05:33.093Z] DEBUG: [worker-pool] submitWork(triggerId=)
+[debug] [2020-11-13T16:05:33.093Z] DEBUG: [worker-~diagnostic~-234e6da8-5406-4e0b-bf11-43a144c000d4]: Assigning socketPath: \\?\pipe\C:\Users\MC\Downloads\newReCoded\Capstone project\send-form-email\functions\17264
+[debug] [2020-11-13T16:05:33.093Z] DEBUG: [worker-~diagnostic~-234e6da8-5406-4e0b-bf11-43a144c000d4]: BUSY
+[debug] [2020-11-13T16:05:33.582Z] DEBUG: [runtime-status] [17264] Functions runtime initialized. {"cwd":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions","node_version":"14.5.0"}
+[debug] [2020-11-13T16:05:33.587Z] DEBUG: [runtime-status] [17264] Disabled runtime features: undefined
+[debug] [2020-11-13T16:05:33.593Z] DEBUG: [runtime-status] [17264] Resolved module firebase-admin {"declared":true,"installed":true,"version":"9.4.0","resolution":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2020-11-13T16:05:33.595Z] DEBUG: [runtime-status] [17264] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.11.0","resolution":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-11-13T16:05:33.598Z] DEBUG: [runtime-status] [17264] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.11.0","resolution":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-11-13T16:05:33.600Z] DEBUG: [runtime-status] [17264] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}]
+[debug] [2020-11-13T16:05:33.601Z] DEBUG: [runtime-status] [17264] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.11.0","resolution":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-11-13T16:05:33.651Z] DEBUG: [runtime-status] [17264] Checked functions.config() {"config":{}}
+[debug] [2020-11-13T16:05:33.652Z] DEBUG: [runtime-status] [17264] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"3.11.0","resolution":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\node_modules\\firebase-functions\\lib\\index.js"}}
+[debug] [2020-11-13T16:05:33.652Z] DEBUG: [runtime-status] [17264] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.11.0","resolution":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-11-13T16:05:33.653Z] DEBUG: [runtime-status] [17264] Resolved module firebase-admin {"declared":true,"installed":true,"version":"9.4.0","resolution":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2020-11-13T16:05:33.654Z] DEBUG: [runtime-status] [17264] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.11.0","resolution":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-11-13T16:05:33.654Z] DEBUG: [runtime-status] [17264] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"9.4.0","resolution":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\node_modules\\firebase-admin\\lib\\index.js"}}
+[warn] !  TypeError: Cannot read property 'email' of undefined
+    at Object.<anonymous> (C:\Users\MC\Downloads\newReCoded\Capstone project\send-form-email\functions\index.js:7:44)
+    at Module._compile (internal/modules/cjs/loader.js:1201:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1221:10)
+    at Module.load (internal/modules/cjs/loader.js:1050:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:938:14)
+    at Module.require (internal/modules/cjs/loader.js:1090:19)
+    at require (internal/modules/cjs/helpers.js:75:18)
+    at C:\Users\MC\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulatorRuntime.js:698:33
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\MC\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulatorRuntime.js:5:58) {"metadata":{"emulator":{"name":"functions"},"message":"TypeError: Cannot read property 'email' of undefined\n    at Object.<anonymous> (C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\index.js:7:44)\n    at Module._compile (internal/modules/cjs/loader.js:1201:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1221:10)\n    at Module.load (internal/modules/cjs/loader.js:1050:32)\n    at Function.Module._load (internal/modules/cjs/loader.js:938:14)\n    at Module.require (internal/modules/cjs/loader.js:1090:19)\n    at require (internal/modules/cjs/helpers.js:75:18)\n    at C:\\Users\\MC\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\functionsEmulatorRuntime.js:698:33\n    at Generator.next (<anonymous>)\n    at fulfilled (C:\\Users\\MC\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\functionsEmulatorRuntime.js:5:58)"}}
+[warn] !  We were unable to load your functions code. (see above) {"metadata":{"emulator":{"name":"functions"}}}
+[debug] [2020-11-13T16:05:33.739Z] DEBUG: [worker-~diagnostic~-234e6da8-5406-4e0b-bf11-43a144c000d4]: exited
+[debug] [2020-11-13T16:05:33.740Z] DEBUG: [worker-~diagnostic~-234e6da8-5406-4e0b-bf11-43a144c000d4]: FINISHED
+[debug] [2020-11-13T16:12:33.895Z] DEBUG: File C:\Users\MC\Downloads\newReCoded\Capstone project\send-form-email\functions\index.js changed, reloading triggers
+[debug] [2020-11-13T16:12:34.896Z] DEBUG: [worker-pool] Cleaned up workers for ~diagnostic~: 1 --> 0
+[debug] [2020-11-13T16:12:34.904Z] DEBUG: [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-11-13T16:12:34.904Z] DEBUG: [worker-pool] Adding worker with key ~diagnostic~, total=1
+[debug] [2020-11-13T16:12:34.904Z] DEBUG: [worker-pool] submitWork(triggerId=)
+[debug] [2020-11-13T16:12:34.904Z] DEBUG: [worker-~diagnostic~-75e5a648-8adf-4aee-a3f1-b01895580a76]: Assigning socketPath: \\?\pipe\C:\Users\MC\Downloads\newReCoded\Capstone project\send-form-email\functions\8048
+[debug] [2020-11-13T16:12:34.904Z] DEBUG: [worker-~diagnostic~-75e5a648-8adf-4aee-a3f1-b01895580a76]: BUSY
+[debug] [2020-11-13T16:12:35.067Z] DEBUG: File C:\Users\MC\Downloads\newReCoded\Capstone project\send-form-email\functions\index.js changed, reloading triggers
+[debug] [2020-11-13T16:12:35.386Z] DEBUG: [runtime-status] [8048] Functions runtime initialized. {"cwd":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions","node_version":"14.5.0"}
+[debug] [2020-11-13T16:12:35.388Z] DEBUG: [runtime-status] [8048] Disabled runtime features: undefined
+[debug] [2020-11-13T16:12:35.393Z] DEBUG: [runtime-status] [8048] Resolved module firebase-admin {"declared":true,"installed":true,"version":"9.4.0","resolution":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2020-11-13T16:12:35.395Z] DEBUG: [runtime-status] [8048] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.11.0","resolution":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-11-13T16:12:35.397Z] DEBUG: [runtime-status] [8048] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.11.0","resolution":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-11-13T16:12:35.399Z] DEBUG: [runtime-status] [8048] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}]
+[debug] [2020-11-13T16:12:35.400Z] DEBUG: [runtime-status] [8048] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.11.0","resolution":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-11-13T16:12:35.460Z] DEBUG: [runtime-status] [8048] Checked functions.config() {"config":{}}
+[debug] [2020-11-13T16:12:35.460Z] DEBUG: [runtime-status] [8048] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"3.11.0","resolution":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\node_modules\\firebase-functions\\lib\\index.js"}}
+[debug] [2020-11-13T16:12:35.460Z] DEBUG: [runtime-status] [8048] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.11.0","resolution":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-11-13T16:12:35.461Z] DEBUG: [runtime-status] [8048] Resolved module firebase-admin {"declared":true,"installed":true,"version":"9.4.0","resolution":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2020-11-13T16:12:35.462Z] DEBUG: [runtime-status] [8048] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.11.0","resolution":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-11-13T16:12:35.462Z] DEBUG: [runtime-status] [8048] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"9.4.0","resolution":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\node_modules\\firebase-admin\\lib\\index.js"}}
+[warn] !  TypeError: Cannot read property 'email' of undefined
+    at Object.<anonymous> (C:\Users\MC\Downloads\newReCoded\Capstone project\send-form-email\functions\index.js:7:44)
+    at Module._compile (internal/modules/cjs/loader.js:1201:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1221:10)
+    at Module.load (internal/modules/cjs/loader.js:1050:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:938:14)
+    at Module.require (internal/modules/cjs/loader.js:1090:19)
+    at require (internal/modules/cjs/helpers.js:75:18)
+    at C:\Users\MC\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulatorRuntime.js:698:33
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\MC\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulatorRuntime.js:5:58) {"metadata":{"emulator":{"name":"functions"},"message":"TypeError: Cannot read property 'email' of undefined\n    at Object.<anonymous> (C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\index.js:7:44)\n    at Module._compile (internal/modules/cjs/loader.js:1201:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1221:10)\n    at Module.load (internal/modules/cjs/loader.js:1050:32)\n    at Function.Module._load (internal/modules/cjs/loader.js:938:14)\n    at Module.require (internal/modules/cjs/loader.js:1090:19)\n    at require (internal/modules/cjs/helpers.js:75:18)\n    at C:\\Users\\MC\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\functionsEmulatorRuntime.js:698:33\n    at Generator.next (<anonymous>)\n    at fulfilled (C:\\Users\\MC\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\functionsEmulatorRuntime.js:5:58)"}}
+[warn] !  We were unable to load your functions code. (see above) {"metadata":{"emulator":{"name":"functions"}}}
+[debug] [2020-11-13T16:12:35.547Z] DEBUG: [worker-~diagnostic~-75e5a648-8adf-4aee-a3f1-b01895580a76]: exited
+[debug] [2020-11-13T16:12:35.547Z] DEBUG: [worker-~diagnostic~-75e5a648-8adf-4aee-a3f1-b01895580a76]: FINISHED
+[debug] [2020-11-13T16:12:36.068Z] DEBUG: [worker-pool] Cleaned up workers for ~diagnostic~: 1 --> 0
+[debug] [2020-11-13T16:12:36.076Z] DEBUG: [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-11-13T16:12:36.076Z] DEBUG: [worker-pool] Adding worker with key ~diagnostic~, total=1
+[debug] [2020-11-13T16:12:36.076Z] DEBUG: [worker-pool] submitWork(triggerId=)
+[debug] [2020-11-13T16:12:36.076Z] DEBUG: [worker-~diagnostic~-0a0047c0-819d-48c9-94c5-b22c1d96fa40]: Assigning socketPath: \\?\pipe\C:\Users\MC\Downloads\newReCoded\Capstone project\send-form-email\functions\15576
+[debug] [2020-11-13T16:12:36.076Z] DEBUG: [worker-~diagnostic~-0a0047c0-819d-48c9-94c5-b22c1d96fa40]: BUSY
+[debug] [2020-11-13T16:12:36.590Z] DEBUG: [runtime-status] [15576] Functions runtime initialized. {"cwd":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions","node_version":"14.5.0"}
+[debug] [2020-11-13T16:12:36.594Z] DEBUG: [runtime-status] [15576] Disabled runtime features: undefined
+[debug] [2020-11-13T16:12:36.597Z] DEBUG: [runtime-status] [15576] Resolved module firebase-admin {"declared":true,"installed":true,"version":"9.4.0","resolution":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2020-11-13T16:12:36.603Z] DEBUG: [runtime-status] [15576] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.11.0","resolution":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-11-13T16:12:36.605Z] DEBUG: [runtime-status] [15576] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.11.0","resolution":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-11-13T16:12:36.607Z] DEBUG: [runtime-status] [15576] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}]
+[debug] [2020-11-13T16:12:36.607Z] DEBUG: [runtime-status] [15576] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.11.0","resolution":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-11-13T16:12:36.662Z] DEBUG: [runtime-status] [15576] Checked functions.config() {"config":{}}
+[debug] [2020-11-13T16:12:36.662Z] DEBUG: [runtime-status] [15576] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"3.11.0","resolution":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\node_modules\\firebase-functions\\lib\\index.js"}}
+[debug] [2020-11-13T16:12:36.663Z] DEBUG: [runtime-status] [15576] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.11.0","resolution":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-11-13T16:12:36.664Z] DEBUG: [runtime-status] [15576] Resolved module firebase-admin {"declared":true,"installed":true,"version":"9.4.0","resolution":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2020-11-13T16:12:36.664Z] DEBUG: [runtime-status] [15576] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.11.0","resolution":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-11-13T16:12:36.665Z] DEBUG: [runtime-status] [15576] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"9.4.0","resolution":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\node_modules\\firebase-admin\\lib\\index.js"}}
+[warn] !  TypeError: Cannot read property 'email' of undefined
+    at Object.<anonymous> (C:\Users\MC\Downloads\newReCoded\Capstone project\send-form-email\functions\index.js:7:44)
+    at Module._compile (internal/modules/cjs/loader.js:1201:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1221:10)
+    at Module.load (internal/modules/cjs/loader.js:1050:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:938:14)
+    at Module.require (internal/modules/cjs/loader.js:1090:19)
+    at require (internal/modules/cjs/helpers.js:75:18)
+    at C:\Users\MC\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulatorRuntime.js:698:33
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\MC\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulatorRuntime.js:5:58) {"metadata":{"emulator":{"name":"functions"},"message":"TypeError: Cannot read property 'email' of undefined\n    at Object.<anonymous> (C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\index.js:7:44)\n    at Module._compile (internal/modules/cjs/loader.js:1201:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1221:10)\n    at Module.load (internal/modules/cjs/loader.js:1050:32)\n    at Function.Module._load (internal/modules/cjs/loader.js:938:14)\n    at Module.require (internal/modules/cjs/loader.js:1090:19)\n    at require (internal/modules/cjs/helpers.js:75:18)\n    at C:\\Users\\MC\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\functionsEmulatorRuntime.js:698:33\n    at Generator.next (<anonymous>)\n    at fulfilled (C:\\Users\\MC\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\functionsEmulatorRuntime.js:5:58)"}}
+[warn] !  We were unable to load your functions code. (see above) {"metadata":{"emulator":{"name":"functions"}}}
+[debug] [2020-11-13T16:12:36.756Z] DEBUG: [worker-~diagnostic~-0a0047c0-819d-48c9-94c5-b22c1d96fa40]: exited
+[debug] [2020-11-13T16:12:36.757Z] DEBUG: [worker-~diagnostic~-0a0047c0-819d-48c9-94c5-b22c1d96fa40]: FINISHED
+[debug] [2020-11-13T16:16:02.563Z] DEBUG: File C:\Users\MC\Downloads\newReCoded\Capstone project\send-form-email\functions\index.js changed, reloading triggers
+[debug] [2020-11-13T16:16:03.564Z] DEBUG: [worker-pool] Cleaned up workers for ~diagnostic~: 1 --> 0
+[debug] [2020-11-13T16:16:03.578Z] DEBUG: [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-11-13T16:16:03.579Z] DEBUG: [worker-pool] Adding worker with key ~diagnostic~, total=1
+[debug] [2020-11-13T16:16:03.579Z] DEBUG: [worker-pool] submitWork(triggerId=)
+[debug] [2020-11-13T16:16:03.580Z] DEBUG: [worker-~diagnostic~-0fd18b8d-665a-434a-ad0c-f9c895577f66]: Assigning socketPath: \\?\pipe\C:\Users\MC\Downloads\newReCoded\Capstone project\send-form-email\functions\10352
+[debug] [2020-11-13T16:16:03.580Z] DEBUG: [worker-~diagnostic~-0fd18b8d-665a-434a-ad0c-f9c895577f66]: BUSY
+[debug] [2020-11-13T16:16:04.005Z] DEBUG: [runtime-status] [10352] Functions runtime initialized. {"cwd":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions","node_version":"14.5.0"}
+[debug] [2020-11-13T16:16:04.007Z] DEBUG: [runtime-status] [10352] Disabled runtime features: undefined
+[debug] [2020-11-13T16:16:04.011Z] DEBUG: [runtime-status] [10352] Resolved module firebase-admin {"declared":true,"installed":true,"version":"9.4.0","resolution":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2020-11-13T16:16:04.012Z] DEBUG: [runtime-status] [10352] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.11.0","resolution":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-11-13T16:16:04.014Z] DEBUG: [runtime-status] [10352] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.11.0","resolution":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-11-13T16:16:04.016Z] DEBUG: [runtime-status] [10352] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}]
+[debug] [2020-11-13T16:16:04.017Z] DEBUG: [runtime-status] [10352] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.11.0","resolution":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-11-13T16:16:04.071Z] DEBUG: [runtime-status] [10352] Checked functions.config() {"config":{}}
+[debug] [2020-11-13T16:16:04.071Z] DEBUG: [runtime-status] [10352] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"3.11.0","resolution":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\node_modules\\firebase-functions\\lib\\index.js"}}
+[debug] [2020-11-13T16:16:04.071Z] DEBUG: [runtime-status] [10352] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.11.0","resolution":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-11-13T16:16:04.073Z] DEBUG: [runtime-status] [10352] Resolved module firebase-admin {"declared":true,"installed":true,"version":"9.4.0","resolution":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2020-11-13T16:16:04.073Z] DEBUG: [runtime-status] [10352] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.11.0","resolution":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-11-13T16:16:04.073Z] DEBUG: [runtime-status] [10352] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"9.4.0","resolution":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\node_modules\\firebase-admin\\lib\\index.js"}}
+[warn] !  C:\Users\MC\Downloads\newReCoded\Capstone project\send-form-email\functions\index.js:21
+  res.set('Access-Control-Allow-Headers', 'Content-Type, Accept
+                                          ^^^^^^^^^^^^^^^^^^^^^
+
+SyntaxError: Invalid or unexpected token
+    at wrapSafe (internal/modules/cjs/loader.js:1117:16)
+    at Module._compile (internal/modules/cjs/loader.js:1165:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1221:10)
+    at Module.load (internal/modules/cjs/loader.js:1050:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:938:14)
+    at Module.require (internal/modules/cjs/loader.js:1090:19)
+    at require (internal/modules/cjs/helpers.js:75:18)
+    at C:\Users\MC\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulatorRuntime.js:698:33
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\MC\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulatorRuntime.js:5:58) {"metadata":{"emulator":{"name":"functions"},"message":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\index.js:21\n  res.set('Access-Control-Allow-Headers', 'Content-Type, Accept\n                                          ^^^^^^^^^^^^^^^^^^^^^\n\nSyntaxError: Invalid or unexpected token\n    at wrapSafe (internal/modules/cjs/loader.js:1117:16)\n    at Module._compile (internal/modules/cjs/loader.js:1165:27)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1221:10)\n    at Module.load (internal/modules/cjs/loader.js:1050:32)\n    at Function.Module._load (internal/modules/cjs/loader.js:938:14)\n    at Module.require (internal/modules/cjs/loader.js:1090:19)\n    at require (internal/modules/cjs/helpers.js:75:18)\n    at C:\\Users\\MC\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\functionsEmulatorRuntime.js:698:33\n    at Generator.next (<anonymous>)\n    at fulfilled (C:\\Users\\MC\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\functionsEmulatorRuntime.js:5:58)"}}
+[warn] !  We were unable to load your functions code. (see above) {"metadata":{"emulator":{"name":"functions"}}}
+[debug] [2020-11-13T16:16:04.099Z] DEBUG: [worker-~diagnostic~-0fd18b8d-665a-434a-ad0c-f9c895577f66]: exited
+[debug] [2020-11-13T16:16:04.099Z] DEBUG: [worker-~diagnostic~-0fd18b8d-665a-434a-ad0c-f9c895577f66]: FINISHED
+[debug] [2020-11-13T16:16:04.463Z] DEBUG: File C:\Users\MC\Downloads\newReCoded\Capstone project\send-form-email\functions\index.js changed, reloading triggers
+[debug] [2020-11-13T16:16:05.465Z] DEBUG: [worker-pool] Cleaned up workers for ~diagnostic~: 1 --> 0
+[debug] [2020-11-13T16:16:05.481Z] DEBUG: [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-11-13T16:16:05.481Z] DEBUG: [worker-pool] Adding worker with key ~diagnostic~, total=1
+[debug] [2020-11-13T16:16:05.482Z] DEBUG: [worker-pool] submitWork(triggerId=)
+[debug] [2020-11-13T16:16:05.482Z] DEBUG: [worker-~diagnostic~-b978a6a1-ac5b-4128-b19f-32c98bba4cb0]: Assigning socketPath: \\?\pipe\C:\Users\MC\Downloads\newReCoded\Capstone project\send-form-email\functions\12632
+[debug] [2020-11-13T16:16:05.482Z] DEBUG: [worker-~diagnostic~-b978a6a1-ac5b-4128-b19f-32c98bba4cb0]: BUSY
+[debug] [2020-11-13T16:16:05.926Z] DEBUG: [runtime-status] [12632] Functions runtime initialized. {"cwd":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions","node_version":"14.5.0"}
+[debug] [2020-11-13T16:16:05.928Z] DEBUG: [runtime-status] [12632] Disabled runtime features: undefined
+[debug] [2020-11-13T16:16:05.932Z] DEBUG: [runtime-status] [12632] Resolved module firebase-admin {"declared":true,"installed":true,"version":"9.4.0","resolution":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2020-11-13T16:16:05.935Z] DEBUG: [runtime-status] [12632] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.11.0","resolution":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-11-13T16:16:05.937Z] DEBUG: [runtime-status] [12632] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.11.0","resolution":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-11-13T16:16:05.939Z] DEBUG: [runtime-status] [12632] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}]
+[debug] [2020-11-13T16:16:05.940Z] DEBUG: [runtime-status] [12632] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.11.0","resolution":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-11-13T16:16:05.992Z] DEBUG: [runtime-status] [12632] Checked functions.config() {"config":{}}
+[debug] [2020-11-13T16:16:05.992Z] DEBUG: [runtime-status] [12632] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"3.11.0","resolution":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\node_modules\\firebase-functions\\lib\\index.js"}}
+[debug] [2020-11-13T16:16:05.993Z] DEBUG: [runtime-status] [12632] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.11.0","resolution":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-11-13T16:16:05.994Z] DEBUG: [runtime-status] [12632] Resolved module firebase-admin {"declared":true,"installed":true,"version":"9.4.0","resolution":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2020-11-13T16:16:05.995Z] DEBUG: [runtime-status] [12632] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.11.0","resolution":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-11-13T16:16:05.995Z] DEBUG: [runtime-status] [12632] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"9.4.0","resolution":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\node_modules\\firebase-admin\\lib\\index.js"}}
+[warn] !  TypeError: Cannot read property 'email' of undefined
+    at Object.<anonymous> (C:\Users\MC\Downloads\newReCoded\Capstone project\send-form-email\functions\index.js:7:44)
+    at Module._compile (internal/modules/cjs/loader.js:1201:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1221:10)
+    at Module.load (internal/modules/cjs/loader.js:1050:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:938:14)
+    at Module.require (internal/modules/cjs/loader.js:1090:19)
+    at require (internal/modules/cjs/helpers.js:75:18)
+    at C:\Users\MC\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulatorRuntime.js:698:33
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\MC\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulatorRuntime.js:5:58) {"metadata":{"emulator":{"name":"functions"},"message":"TypeError: Cannot read property 'email' of undefined\n    at Object.<anonymous> (C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\index.js:7:44)\n    at Module._compile (internal/modules/cjs/loader.js:1201:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1221:10)\n    at Module.load (internal/modules/cjs/loader.js:1050:32)\n    at Function.Module._load (internal/modules/cjs/loader.js:938:14)\n    at Module.require (internal/modules/cjs/loader.js:1090:19)\n    at require (internal/modules/cjs/helpers.js:75:18)\n    at C:\\Users\\MC\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\functionsEmulatorRuntime.js:698:33\n    at Generator.next (<anonymous>)\n    at fulfilled (C:\\Users\\MC\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\functionsEmulatorRuntime.js:5:58)"}}
+[warn] !  We were unable to load your functions code. (see above) {"metadata":{"emulator":{"name":"functions"}}}
+[debug] [2020-11-13T16:16:06.070Z] DEBUG: [worker-~diagnostic~-b978a6a1-ac5b-4128-b19f-32c98bba4cb0]: exited
+[debug] [2020-11-13T16:16:06.070Z] DEBUG: [worker-~diagnostic~-b978a6a1-ac5b-4128-b19f-32c98bba4cb0]: FINISHED
+[debug] [2020-11-13T16:16:07.749Z] DEBUG: File C:\Users\MC\Downloads\newReCoded\Capstone project\send-form-email\functions\index.js changed, reloading triggers
+[debug] [2020-11-13T16:16:08.751Z] DEBUG: [worker-pool] Cleaned up workers for ~diagnostic~: 1 --> 0
+[debug] [2020-11-13T16:16:08.766Z] DEBUG: [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-11-13T16:16:08.767Z] DEBUG: [worker-pool] Adding worker with key ~diagnostic~, total=1
+[debug] [2020-11-13T16:16:08.767Z] DEBUG: [worker-pool] submitWork(triggerId=)
+[debug] [2020-11-13T16:16:08.767Z] DEBUG: [worker-~diagnostic~-324b52fa-58b5-4d66-bf4b-377166bce4ba]: Assigning socketPath: \\?\pipe\C:\Users\MC\Downloads\newReCoded\Capstone project\send-form-email\functions\10428
+[debug] [2020-11-13T16:16:08.767Z] DEBUG: [worker-~diagnostic~-324b52fa-58b5-4d66-bf4b-377166bce4ba]: BUSY
+[debug] [2020-11-13T16:16:09.251Z] DEBUG: [runtime-status] [10428] Functions runtime initialized. {"cwd":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions","node_version":"14.5.0"}
+[debug] [2020-11-13T16:16:09.255Z] DEBUG: [runtime-status] [10428] Disabled runtime features: undefined
+[debug] [2020-11-13T16:16:09.259Z] DEBUG: [runtime-status] [10428] Resolved module firebase-admin {"declared":true,"installed":true,"version":"9.4.0","resolution":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2020-11-13T16:16:09.263Z] DEBUG: [runtime-status] [10428] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.11.0","resolution":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-11-13T16:16:09.265Z] DEBUG: [runtime-status] [10428] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.11.0","resolution":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-11-13T16:16:09.267Z] DEBUG: [runtime-status] [10428] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}]
+[debug] [2020-11-13T16:16:09.267Z] DEBUG: [runtime-status] [10428] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.11.0","resolution":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-11-13T16:16:09.316Z] DEBUG: [runtime-status] [10428] Checked functions.config() {"config":{}}
+[debug] [2020-11-13T16:16:09.316Z] DEBUG: [runtime-status] [10428] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"3.11.0","resolution":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\node_modules\\firebase-functions\\lib\\index.js"}}
+[debug] [2020-11-13T16:16:09.316Z] DEBUG: [runtime-status] [10428] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.11.0","resolution":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-11-13T16:16:09.317Z] DEBUG: [runtime-status] [10428] Resolved module firebase-admin {"declared":true,"installed":true,"version":"9.4.0","resolution":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2020-11-13T16:16:09.318Z] DEBUG: [runtime-status] [10428] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.11.0","resolution":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-11-13T16:16:09.318Z] DEBUG: [runtime-status] [10428] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"9.4.0","resolution":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\node_modules\\firebase-admin\\lib\\index.js"}}
+[warn] !  TypeError: Cannot read property 'email' of undefined
+    at Object.<anonymous> (C:\Users\MC\Downloads\newReCoded\Capstone project\send-form-email\functions\index.js:7:44)
+    at Module._compile (internal/modules/cjs/loader.js:1201:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1221:10)
+    at Module.load (internal/modules/cjs/loader.js:1050:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:938:14)
+    at Module.require (internal/modules/cjs/loader.js:1090:19)
+    at require (internal/modules/cjs/helpers.js:75:18)
+    at C:\Users\MC\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulatorRuntime.js:698:33
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\MC\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulatorRuntime.js:5:58) {"metadata":{"emulator":{"name":"functions"},"message":"TypeError: Cannot read property 'email' of undefined\n    at Object.<anonymous> (C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\index.js:7:44)\n    at Module._compile (internal/modules/cjs/loader.js:1201:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1221:10)\n    at Module.load (internal/modules/cjs/loader.js:1050:32)\n    at Function.Module._load (internal/modules/cjs/loader.js:938:14)\n    at Module.require (internal/modules/cjs/loader.js:1090:19)\n    at require (internal/modules/cjs/helpers.js:75:18)\n    at C:\\Users\\MC\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\functionsEmulatorRuntime.js:698:33\n    at Generator.next (<anonymous>)\n    at fulfilled (C:\\Users\\MC\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\functionsEmulatorRuntime.js:5:58)"}}
+[warn] !  We were unable to load your functions code. (see above) {"metadata":{"emulator":{"name":"functions"}}}
+[debug] [2020-11-13T16:16:09.399Z] DEBUG: [worker-~diagnostic~-324b52fa-58b5-4d66-bf4b-377166bce4ba]: exited
+[debug] [2020-11-13T16:16:09.400Z] DEBUG: [worker-~diagnostic~-324b52fa-58b5-4d66-bf4b-377166bce4ba]: FINISHED
+[debug] [2020-11-13T16:16:28.262Z] DEBUG: File C:\Users\MC\Downloads\newReCoded\Capstone project\send-form-email\functions\index.js changed, reloading triggers
+[debug] [2020-11-13T16:16:29.263Z] DEBUG: [worker-pool] Cleaned up workers for ~diagnostic~: 1 --> 0
+[debug] [2020-11-13T16:16:29.288Z] DEBUG: [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-11-13T16:16:29.289Z] DEBUG: [worker-pool] Adding worker with key ~diagnostic~, total=1
+[debug] [2020-11-13T16:16:29.289Z] DEBUG: [worker-pool] submitWork(triggerId=)
+[debug] [2020-11-13T16:16:29.289Z] DEBUG: [worker-~diagnostic~-7b065877-8614-4184-af48-f78453716ada]: Assigning socketPath: \\?\pipe\C:\Users\MC\Downloads\newReCoded\Capstone project\send-form-email\functions\11736
+[debug] [2020-11-13T16:16:29.290Z] DEBUG: [worker-~diagnostic~-7b065877-8614-4184-af48-f78453716ada]: BUSY
+[debug] [2020-11-13T16:16:29.720Z] DEBUG: [runtime-status] [11736] Functions runtime initialized. {"cwd":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions","node_version":"14.5.0"}
+[debug] [2020-11-13T16:16:29.722Z] DEBUG: [runtime-status] [11736] Disabled runtime features: undefined
+[debug] [2020-11-13T16:16:29.726Z] DEBUG: [runtime-status] [11736] Resolved module firebase-admin {"declared":true,"installed":true,"version":"9.4.0","resolution":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2020-11-13T16:16:29.728Z] DEBUG: [runtime-status] [11736] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.11.0","resolution":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-11-13T16:16:29.730Z] DEBUG: [runtime-status] [11736] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.11.0","resolution":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-11-13T16:16:29.732Z] DEBUG: [runtime-status] [11736] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}]
+[debug] [2020-11-13T16:16:29.732Z] DEBUG: [runtime-status] [11736] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.11.0","resolution":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-11-13T16:16:29.787Z] DEBUG: [runtime-status] [11736] Checked functions.config() {"config":{}}
+[debug] [2020-11-13T16:16:29.787Z] DEBUG: [runtime-status] [11736] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"3.11.0","resolution":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\node_modules\\firebase-functions\\lib\\index.js"}}
+[debug] [2020-11-13T16:16:29.787Z] DEBUG: [runtime-status] [11736] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.11.0","resolution":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-11-13T16:16:29.788Z] DEBUG: [runtime-status] [11736] Resolved module firebase-admin {"declared":true,"installed":true,"version":"9.4.0","resolution":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2020-11-13T16:16:29.789Z] DEBUG: [runtime-status] [11736] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.11.0","resolution":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-11-13T16:16:29.789Z] DEBUG: [runtime-status] [11736] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"9.4.0","resolution":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\node_modules\\firebase-admin\\lib\\index.js"}}
+[warn] !  TypeError: Cannot read property 'email' of undefined
+    at Object.<anonymous> (C:\Users\MC\Downloads\newReCoded\Capstone project\send-form-email\functions\index.js:7:44)
+    at Module._compile (internal/modules/cjs/loader.js:1201:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1221:10)
+    at Module.load (internal/modules/cjs/loader.js:1050:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:938:14)
+    at Module.require (internal/modules/cjs/loader.js:1090:19)
+    at require (internal/modules/cjs/helpers.js:75:18)
+    at C:\Users\MC\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulatorRuntime.js:698:33
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\MC\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulatorRuntime.js:5:58) {"metadata":{"emulator":{"name":"functions"},"message":"TypeError: Cannot read property 'email' of undefined\n    at Object.<anonymous> (C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\index.js:7:44)\n    at Module._compile (internal/modules/cjs/loader.js:1201:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1221:10)\n    at Module.load (internal/modules/cjs/loader.js:1050:32)\n    at Function.Module._load (internal/modules/cjs/loader.js:938:14)\n    at Module.require (internal/modules/cjs/loader.js:1090:19)\n    at require (internal/modules/cjs/helpers.js:75:18)\n    at C:\\Users\\MC\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\functionsEmulatorRuntime.js:698:33\n    at Generator.next (<anonymous>)\n    at fulfilled (C:\\Users\\MC\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\functionsEmulatorRuntime.js:5:58)"}}
+[warn] !  We were unable to load your functions code. (see above) {"metadata":{"emulator":{"name":"functions"}}}
+[debug] [2020-11-13T16:16:29.868Z] DEBUG: [worker-~diagnostic~-7b065877-8614-4184-af48-f78453716ada]: exited
+[debug] [2020-11-13T16:16:29.868Z] DEBUG: [worker-~diagnostic~-7b065877-8614-4184-af48-f78453716ada]: FINISHED
+[debug] [2020-11-13T16:16:33.432Z] DEBUG: File C:\Users\MC\Downloads\newReCoded\Capstone project\send-form-email\functions\index.js changed, reloading triggers
+[debug] [2020-11-13T16:16:34.434Z] DEBUG: [worker-pool] Cleaned up workers for ~diagnostic~: 1 --> 0
+[debug] [2020-11-13T16:16:34.445Z] DEBUG: [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-11-13T16:16:34.445Z] DEBUG: [worker-pool] Adding worker with key ~diagnostic~, total=1
+[debug] [2020-11-13T16:16:34.445Z] DEBUG: [worker-pool] submitWork(triggerId=)
+[debug] [2020-11-13T16:16:34.446Z] DEBUG: [worker-~diagnostic~-f84b791d-ea66-42ba-82f3-e5f61b6eaa46]: Assigning socketPath: \\?\pipe\C:\Users\MC\Downloads\newReCoded\Capstone project\send-form-email\functions\7388
+[debug] [2020-11-13T16:16:34.446Z] DEBUG: [worker-~diagnostic~-f84b791d-ea66-42ba-82f3-e5f61b6eaa46]: BUSY
+[debug] [2020-11-13T16:16:34.857Z] DEBUG: [runtime-status] [7388] Functions runtime initialized. {"cwd":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions","node_version":"14.5.0"}
+[debug] [2020-11-13T16:16:34.861Z] DEBUG: [runtime-status] [7388] Disabled runtime features: undefined
+[debug] [2020-11-13T16:16:34.865Z] DEBUG: [runtime-status] [7388] Resolved module firebase-admin {"declared":true,"installed":true,"version":"9.4.0","resolution":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2020-11-13T16:16:34.869Z] DEBUG: [runtime-status] [7388] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.11.0","resolution":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-11-13T16:16:34.871Z] DEBUG: [runtime-status] [7388] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.11.0","resolution":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-11-13T16:16:34.872Z] DEBUG: [runtime-status] [7388] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}]
+[debug] [2020-11-13T16:16:34.873Z] DEBUG: [runtime-status] [7388] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.11.0","resolution":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-11-13T16:16:34.919Z] DEBUG: [runtime-status] [7388] Checked functions.config() {"config":{}}
+[debug] [2020-11-13T16:16:34.919Z] DEBUG: [runtime-status] [7388] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"3.11.0","resolution":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\node_modules\\firebase-functions\\lib\\index.js"}}
+[debug] [2020-11-13T16:16:34.920Z] DEBUG: [runtime-status] [7388] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.11.0","resolution":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-11-13T16:16:34.921Z] DEBUG: [runtime-status] [7388] Resolved module firebase-admin {"declared":true,"installed":true,"version":"9.4.0","resolution":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2020-11-13T16:16:34.921Z] DEBUG: [runtime-status] [7388] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.11.0","resolution":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-11-13T16:16:34.921Z] DEBUG: [runtime-status] [7388] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"9.4.0","resolution":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\node_modules\\firebase-admin\\lib\\index.js"}}
+[warn] !  TypeError: Cannot read property 'email' of undefined
+    at Object.<anonymous> (C:\Users\MC\Downloads\newReCoded\Capstone project\send-form-email\functions\index.js:7:44)
+    at Module._compile (internal/modules/cjs/loader.js:1201:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1221:10)
+    at Module.load (internal/modules/cjs/loader.js:1050:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:938:14)
+    at Module.require (internal/modules/cjs/loader.js:1090:19)
+    at require (internal/modules/cjs/helpers.js:75:18)
+    at C:\Users\MC\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulatorRuntime.js:698:33
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\MC\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulatorRuntime.js:5:58) {"metadata":{"emulator":{"name":"functions"},"message":"TypeError: Cannot read property 'email' of undefined\n    at Object.<anonymous> (C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\index.js:7:44)\n    at Module._compile (internal/modules/cjs/loader.js:1201:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1221:10)\n    at Module.load (internal/modules/cjs/loader.js:1050:32)\n    at Function.Module._load (internal/modules/cjs/loader.js:938:14)\n    at Module.require (internal/modules/cjs/loader.js:1090:19)\n    at require (internal/modules/cjs/helpers.js:75:18)\n    at C:\\Users\\MC\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\functionsEmulatorRuntime.js:698:33\n    at Generator.next (<anonymous>)\n    at fulfilled (C:\\Users\\MC\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\functionsEmulatorRuntime.js:5:58)"}}
+[warn] !  We were unable to load your functions code. (see above) {"metadata":{"emulator":{"name":"functions"}}}
+[debug] [2020-11-13T16:16:34.997Z] DEBUG: [worker-~diagnostic~-f84b791d-ea66-42ba-82f3-e5f61b6eaa46]: exited
+[debug] [2020-11-13T16:16:34.997Z] DEBUG: [worker-~diagnostic~-f84b791d-ea66-42ba-82f3-e5f61b6eaa46]: FINISHED
+[debug] [2020-11-13T16:16:42.575Z] DEBUG: File C:\Users\MC\Downloads\newReCoded\Capstone project\send-form-email\functions\index.js changed, reloading triggers
+[debug] [2020-11-13T16:16:43.577Z] DEBUG: [worker-pool] Cleaned up workers for ~diagnostic~: 1 --> 0
+[debug] [2020-11-13T16:16:43.590Z] DEBUG: [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-11-13T16:16:43.591Z] DEBUG: [worker-pool] Adding worker with key ~diagnostic~, total=1
+[debug] [2020-11-13T16:16:43.591Z] DEBUG: [worker-pool] submitWork(triggerId=)
+[debug] [2020-11-13T16:16:43.591Z] DEBUG: [worker-~diagnostic~-6031e8b7-7b49-41e8-8cce-b5c126fa5602]: Assigning socketPath: \\?\pipe\C:\Users\MC\Downloads\newReCoded\Capstone project\send-form-email\functions\16348
+[debug] [2020-11-13T16:16:43.591Z] DEBUG: [worker-~diagnostic~-6031e8b7-7b49-41e8-8cce-b5c126fa5602]: BUSY
+[debug] [2020-11-13T16:16:43.995Z] DEBUG: [runtime-status] [16348] Functions runtime initialized. {"cwd":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions","node_version":"14.5.0"}
+[debug] [2020-11-13T16:16:43.997Z] DEBUG: [runtime-status] [16348] Disabled runtime features: undefined
+[debug] [2020-11-13T16:16:44.001Z] DEBUG: [runtime-status] [16348] Resolved module firebase-admin {"declared":true,"installed":true,"version":"9.4.0","resolution":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2020-11-13T16:16:44.002Z] DEBUG: [runtime-status] [16348] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.11.0","resolution":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-11-13T16:16:44.004Z] DEBUG: [runtime-status] [16348] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.11.0","resolution":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-11-13T16:16:44.006Z] DEBUG: [runtime-status] [16348] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}]
+[debug] [2020-11-13T16:16:44.007Z] DEBUG: [runtime-status] [16348] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.11.0","resolution":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-11-13T16:16:44.058Z] DEBUG: [runtime-status] [16348] Checked functions.config() {"config":{}}
+[debug] [2020-11-13T16:16:44.058Z] DEBUG: [runtime-status] [16348] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"3.11.0","resolution":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\node_modules\\firebase-functions\\lib\\index.js"}}
+[debug] [2020-11-13T16:16:44.059Z] DEBUG: [runtime-status] [16348] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.11.0","resolution":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-11-13T16:16:44.060Z] DEBUG: [runtime-status] [16348] Resolved module firebase-admin {"declared":true,"installed":true,"version":"9.4.0","resolution":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2020-11-13T16:16:44.061Z] DEBUG: [runtime-status] [16348] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.11.0","resolution":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-11-13T16:16:44.061Z] DEBUG: [runtime-status] [16348] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"9.4.0","resolution":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\node_modules\\firebase-admin\\lib\\index.js"}}
+[warn] !  TypeError: Cannot read property 'email' of undefined
+    at Object.<anonymous> (C:\Users\MC\Downloads\newReCoded\Capstone project\send-form-email\functions\index.js:7:44)
+    at Module._compile (internal/modules/cjs/loader.js:1201:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1221:10)
+    at Module.load (internal/modules/cjs/loader.js:1050:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:938:14)
+    at Module.require (internal/modules/cjs/loader.js:1090:19)
+    at require (internal/modules/cjs/helpers.js:75:18)
+    at C:\Users\MC\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulatorRuntime.js:698:33
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\MC\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulatorRuntime.js:5:58) {"metadata":{"emulator":{"name":"functions"},"message":"TypeError: Cannot read property 'email' of undefined\n    at Object.<anonymous> (C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\index.js:7:44)\n    at Module._compile (internal/modules/cjs/loader.js:1201:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1221:10)\n    at Module.load (internal/modules/cjs/loader.js:1050:32)\n    at Function.Module._load (internal/modules/cjs/loader.js:938:14)\n    at Module.require (internal/modules/cjs/loader.js:1090:19)\n    at require (internal/modules/cjs/helpers.js:75:18)\n    at C:\\Users\\MC\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\functionsEmulatorRuntime.js:698:33\n    at Generator.next (<anonymous>)\n    at fulfilled (C:\\Users\\MC\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\functionsEmulatorRuntime.js:5:58)"}}
+[warn] !  We were unable to load your functions code. (see above) {"metadata":{"emulator":{"name":"functions"}}}
+[debug] [2020-11-13T16:16:44.140Z] DEBUG: [worker-~diagnostic~-6031e8b7-7b49-41e8-8cce-b5c126fa5602]: exited
+[debug] [2020-11-13T16:16:44.140Z] DEBUG: [worker-~diagnostic~-6031e8b7-7b49-41e8-8cce-b5c126fa5602]: FINISHED
+[debug] [2020-11-13T16:16:44.597Z] DEBUG: File C:\Users\MC\Downloads\newReCoded\Capstone project\send-form-email\functions\index.js changed, reloading triggers
+[debug] [2020-11-13T16:16:45.598Z] DEBUG: [worker-pool] Cleaned up workers for ~diagnostic~: 1 --> 0
+[debug] [2020-11-13T16:16:45.620Z] DEBUG: [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-11-13T16:16:45.620Z] DEBUG: [worker-pool] Adding worker with key ~diagnostic~, total=1
+[debug] [2020-11-13T16:16:45.620Z] DEBUG: [worker-pool] submitWork(triggerId=)
+[debug] [2020-11-13T16:16:45.620Z] DEBUG: [worker-~diagnostic~-614afddd-2dd5-4b7c-8a9d-03b958bb40c0]: Assigning socketPath: \\?\pipe\C:\Users\MC\Downloads\newReCoded\Capstone project\send-form-email\functions\15336
+[debug] [2020-11-13T16:16:45.620Z] DEBUG: [worker-~diagnostic~-614afddd-2dd5-4b7c-8a9d-03b958bb40c0]: BUSY
+[debug] [2020-11-13T16:16:46.048Z] DEBUG: [runtime-status] [15336] Functions runtime initialized. {"cwd":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions","node_version":"14.5.0"}
+[debug] [2020-11-13T16:16:46.050Z] DEBUG: [runtime-status] [15336] Disabled runtime features: undefined
+[debug] [2020-11-13T16:16:46.054Z] DEBUG: [runtime-status] [15336] Resolved module firebase-admin {"declared":true,"installed":true,"version":"9.4.0","resolution":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2020-11-13T16:16:46.056Z] DEBUG: [runtime-status] [15336] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.11.0","resolution":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-11-13T16:16:46.057Z] DEBUG: [runtime-status] [15336] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.11.0","resolution":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-11-13T16:16:46.060Z] DEBUG: [runtime-status] [15336] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}]
+[debug] [2020-11-13T16:16:46.061Z] DEBUG: [runtime-status] [15336] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.11.0","resolution":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-11-13T16:16:46.114Z] DEBUG: [runtime-status] [15336] Checked functions.config() {"config":{}}
+[debug] [2020-11-13T16:16:46.115Z] DEBUG: [runtime-status] [15336] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"3.11.0","resolution":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\node_modules\\firebase-functions\\lib\\index.js"}}
+[debug] [2020-11-13T16:16:46.115Z] DEBUG: [runtime-status] [15336] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.11.0","resolution":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-11-13T16:16:46.116Z] DEBUG: [runtime-status] [15336] Resolved module firebase-admin {"declared":true,"installed":true,"version":"9.4.0","resolution":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2020-11-13T16:16:46.117Z] DEBUG: [runtime-status] [15336] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.11.0","resolution":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-11-13T16:16:46.117Z] DEBUG: [runtime-status] [15336] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"9.4.0","resolution":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\node_modules\\firebase-admin\\lib\\index.js"}}
+[warn] !  TypeError: Cannot read property 'email' of undefined
+    at Object.<anonymous> (C:\Users\MC\Downloads\newReCoded\Capstone project\send-form-email\functions\index.js:7:44)
+    at Module._compile (internal/modules/cjs/loader.js:1201:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1221:10)
+    at Module.load (internal/modules/cjs/loader.js:1050:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:938:14)
+    at Module.require (internal/modules/cjs/loader.js:1090:19)
+    at require (internal/modules/cjs/helpers.js:75:18)
+    at C:\Users\MC\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulatorRuntime.js:698:33
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\MC\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulatorRuntime.js:5:58) {"metadata":{"emulator":{"name":"functions"},"message":"TypeError: Cannot read property 'email' of undefined\n    at Object.<anonymous> (C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\index.js:7:44)\n    at Module._compile (internal/modules/cjs/loader.js:1201:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1221:10)\n    at Module.load (internal/modules/cjs/loader.js:1050:32)\n    at Function.Module._load (internal/modules/cjs/loader.js:938:14)\n    at Module.require (internal/modules/cjs/loader.js:1090:19)\n    at require (internal/modules/cjs/helpers.js:75:18)\n    at C:\\Users\\MC\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\functionsEmulatorRuntime.js:698:33\n    at Generator.next (<anonymous>)\n    at fulfilled (C:\\Users\\MC\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\functionsEmulatorRuntime.js:5:58)"}}
+[warn] !  We were unable to load your functions code. (see above) {"metadata":{"emulator":{"name":"functions"}}}
+[debug] [2020-11-13T16:16:46.192Z] DEBUG: [worker-~diagnostic~-614afddd-2dd5-4b7c-8a9d-03b958bb40c0]: exited
+[debug] [2020-11-13T16:16:46.192Z] DEBUG: [worker-~diagnostic~-614afddd-2dd5-4b7c-8a9d-03b958bb40c0]: FINISHED
+[debug] [2020-11-13T16:22:27.784Z] DEBUG: File C:\Users\MC\Downloads\newReCoded\Capstone project\send-form-email\functions\index.js changed, reloading triggers
+[debug] [2020-11-13T16:22:28.786Z] DEBUG: [worker-pool] Cleaned up workers for ~diagnostic~: 1 --> 0
+[debug] [2020-11-13T16:22:28.801Z] DEBUG: [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-11-13T16:22:28.801Z] DEBUG: [worker-pool] Adding worker with key ~diagnostic~, total=1
+[debug] [2020-11-13T16:22:28.801Z] DEBUG: [worker-pool] submitWork(triggerId=)
+[debug] [2020-11-13T16:22:28.801Z] DEBUG: [worker-~diagnostic~-43354ca0-c5f9-4dfa-b468-a0aa25c874cf]: Assigning socketPath: \\?\pipe\C:\Users\MC\Downloads\newReCoded\Capstone project\send-form-email\functions\2744
+[debug] [2020-11-13T16:22:28.801Z] DEBUG: [worker-~diagnostic~-43354ca0-c5f9-4dfa-b468-a0aa25c874cf]: BUSY
+[debug] [2020-11-13T16:22:29.330Z] DEBUG: [runtime-status] [2744] Functions runtime initialized. {"cwd":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions","node_version":"14.5.0"}
+[debug] [2020-11-13T16:22:29.334Z] DEBUG: [runtime-status] [2744] Disabled runtime features: undefined
+[debug] [2020-11-13T16:22:29.338Z] DEBUG: [runtime-status] [2744] Resolved module firebase-admin {"declared":true,"installed":true,"version":"9.4.0","resolution":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2020-11-13T16:22:29.342Z] DEBUG: [runtime-status] [2744] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.11.0","resolution":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-11-13T16:22:29.343Z] DEBUG: [runtime-status] [2744] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.11.0","resolution":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-11-13T16:22:29.345Z] DEBUG: [runtime-status] [2744] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}]
+[debug] [2020-11-13T16:22:29.345Z] DEBUG: [runtime-status] [2744] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.11.0","resolution":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-11-13T16:22:29.390Z] DEBUG: [runtime-status] [2744] Checked functions.config() {"config":{}}
+[debug] [2020-11-13T16:22:29.391Z] DEBUG: [runtime-status] [2744] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"3.11.0","resolution":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\node_modules\\firebase-functions\\lib\\index.js"}}
+[debug] [2020-11-13T16:22:29.391Z] DEBUG: [runtime-status] [2744] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.11.0","resolution":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-11-13T16:22:29.392Z] DEBUG: [runtime-status] [2744] Resolved module firebase-admin {"declared":true,"installed":true,"version":"9.4.0","resolution":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2020-11-13T16:22:29.393Z] DEBUG: [runtime-status] [2744] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.11.0","resolution":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-11-13T16:22:29.393Z] DEBUG: [runtime-status] [2744] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"9.4.0","resolution":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\node_modules\\firebase-admin\\lib\\index.js"}}
+[warn] !  TypeError: Cannot read property 'email' of undefined
+    at Object.<anonymous> (C:\Users\MC\Downloads\newReCoded\Capstone project\send-form-email\functions\index.js:6:44)
+    at Module._compile (internal/modules/cjs/loader.js:1201:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1221:10)
+    at Module.load (internal/modules/cjs/loader.js:1050:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:938:14)
+    at Module.require (internal/modules/cjs/loader.js:1090:19)
+    at require (internal/modules/cjs/helpers.js:75:18)
+    at C:\Users\MC\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulatorRuntime.js:698:33
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\MC\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulatorRuntime.js:5:58) {"metadata":{"emulator":{"name":"functions"},"message":"TypeError: Cannot read property 'email' of undefined\n    at Object.<anonymous> (C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\index.js:6:44)\n    at Module._compile (internal/modules/cjs/loader.js:1201:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1221:10)\n    at Module.load (internal/modules/cjs/loader.js:1050:32)\n    at Function.Module._load (internal/modules/cjs/loader.js:938:14)\n    at Module.require (internal/modules/cjs/loader.js:1090:19)\n    at require (internal/modules/cjs/helpers.js:75:18)\n    at C:\\Users\\MC\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\functionsEmulatorRuntime.js:698:33\n    at Generator.next (<anonymous>)\n    at fulfilled (C:\\Users\\MC\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\functionsEmulatorRuntime.js:5:58)"}}
+[warn] !  We were unable to load your functions code. (see above) {"metadata":{"emulator":{"name":"functions"}}}
+[debug] [2020-11-13T16:22:29.472Z] DEBUG: [worker-~diagnostic~-43354ca0-c5f9-4dfa-b468-a0aa25c874cf]: exited
+[debug] [2020-11-13T16:22:29.472Z] DEBUG: [worker-~diagnostic~-43354ca0-c5f9-4dfa-b468-a0aa25c874cf]: FINISHED
+[debug] [2020-11-13T16:22:37.179Z] DEBUG: File C:\Users\MC\Downloads\newReCoded\Capstone project\send-form-email\functions\index.js changed, reloading triggers
+[debug] [2020-11-13T16:22:38.179Z] DEBUG: [worker-pool] Cleaned up workers for ~diagnostic~: 1 --> 0
+[debug] [2020-11-13T16:22:38.203Z] DEBUG: [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-11-13T16:22:38.203Z] DEBUG: [worker-pool] Adding worker with key ~diagnostic~, total=1
+[debug] [2020-11-13T16:22:38.203Z] DEBUG: [worker-pool] submitWork(triggerId=)
+[debug] [2020-11-13T16:22:38.204Z] DEBUG: [worker-~diagnostic~-f1e31390-dc87-4f63-8c0c-2d5908ece61b]: Assigning socketPath: \\?\pipe\C:\Users\MC\Downloads\newReCoded\Capstone project\send-form-email\functions\7872
+[debug] [2020-11-13T16:22:38.204Z] DEBUG: [worker-~diagnostic~-f1e31390-dc87-4f63-8c0c-2d5908ece61b]: BUSY
+[debug] [2020-11-13T16:22:38.657Z] DEBUG: [runtime-status] [7872] Functions runtime initialized. {"cwd":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions","node_version":"14.5.0"}
+[debug] [2020-11-13T16:22:38.661Z] DEBUG: [runtime-status] [7872] Disabled runtime features: undefined
+[debug] [2020-11-13T16:22:38.667Z] DEBUG: [runtime-status] [7872] Resolved module firebase-admin {"declared":true,"installed":true,"version":"9.4.0","resolution":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2020-11-13T16:22:38.668Z] DEBUG: [runtime-status] [7872] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.11.0","resolution":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-11-13T16:22:38.671Z] DEBUG: [runtime-status] [7872] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.11.0","resolution":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-11-13T16:22:38.672Z] DEBUG: [runtime-status] [7872] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}]
+[debug] [2020-11-13T16:22:38.673Z] DEBUG: [runtime-status] [7872] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.11.0","resolution":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-11-13T16:22:38.719Z] DEBUG: [runtime-status] [7872] Checked functions.config() {"config":{}}
+[debug] [2020-11-13T16:22:38.719Z] DEBUG: [runtime-status] [7872] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"3.11.0","resolution":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\node_modules\\firebase-functions\\lib\\index.js"}}
+[debug] [2020-11-13T16:22:38.720Z] DEBUG: [runtime-status] [7872] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.11.0","resolution":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-11-13T16:22:38.721Z] DEBUG: [runtime-status] [7872] Resolved module firebase-admin {"declared":true,"installed":true,"version":"9.4.0","resolution":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2020-11-13T16:22:38.722Z] DEBUG: [runtime-status] [7872] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.11.0","resolution":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-11-13T16:22:38.722Z] DEBUG: [runtime-status] [7872] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"9.4.0","resolution":"C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\node_modules\\firebase-admin\\lib\\index.js"}}
+[warn] !  TypeError: Cannot read property 'email' of undefined
+    at Object.<anonymous> (C:\Users\MC\Downloads\newReCoded\Capstone project\send-form-email\functions\index.js:6:44)
+    at Module._compile (internal/modules/cjs/loader.js:1201:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1221:10)
+    at Module.load (internal/modules/cjs/loader.js:1050:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:938:14)
+    at Module.require (internal/modules/cjs/loader.js:1090:19)
+    at require (internal/modules/cjs/helpers.js:75:18)
+    at C:\Users\MC\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulatorRuntime.js:698:33
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\MC\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulatorRuntime.js:5:58) {"metadata":{"emulator":{"name":"functions"},"message":"TypeError: Cannot read property 'email' of undefined\n    at Object.<anonymous> (C:\\Users\\MC\\Downloads\\newReCoded\\Capstone project\\send-form-email\\functions\\index.js:6:44)\n    at Module._compile (internal/modules/cjs/loader.js:1201:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1221:10)\n    at Module.load (internal/modules/cjs/loader.js:1050:32)\n    at Function.Module._load (internal/modules/cjs/loader.js:938:14)\n    at Module.require (internal/modules/cjs/loader.js:1090:19)\n    at require (internal/modules/cjs/helpers.js:75:18)\n    at C:\\Users\\MC\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\functionsEmulatorRuntime.js:698:33\n    at Generator.next (<anonymous>)\n    at fulfilled (C:\\Users\\MC\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\functionsEmulatorRuntime.js:5:58)"}}
+[warn] !  We were unable to load your functions code. (see above) {"metadata":{"emulator":{"name":"functions"}}}
+[debug] [2020-11-13T16:22:38.802Z] DEBUG: [worker-~diagnostic~-f1e31390-dc87-4f63-8c0c-2d5908ece61b]: exited
+[debug] [2020-11-13T16:22:38.802Z] DEBUG: [worker-~diagnostic~-f1e31390-dc87-4f63-8c0c-2d5908ece61b]: FINISHED
